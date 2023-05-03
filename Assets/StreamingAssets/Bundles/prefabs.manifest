@@ -1,0 +1,101 @@
+ManifestFileVersion: 0
+CRC: 3507871932
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dac40fa0b7b6897117485be0d443bbd1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 606cb971998612965010d6ab9460040f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73d7c7fcbe5245a5833d348d8b7db79f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2e5d2072fe7f4ebbadcc653e892d767d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: df28ae28fc234609ab89666085a9a91a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8f35d04626a74fc1a3fb5bcd9b3bcdfc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f60fefa8b02b4a9986e241311db8a1ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 267918fcf3f44e94926102550d38cf6b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8f373bee5094d679cb0aa11b1b13498, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 778a5792af894678a52ef9c6331533d0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e2bacf3785b46069cadbb11fbdea211, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c3283afd09be4f0c981259f264fd6e9b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ea69a9c7c2a84411b85c0c9a140dcb3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fdea5c6f28664e20940b4fe15e666dc6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: aeb12073195942f585ef7df93c2f26bb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7676c0fa37f4447286e47ea9331fdb4a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 66985d602e72448683be9cb34f0bde45, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 016d5e332f674339be2f5f69d07199fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7f857a73d0634738b45102689455835c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 879a3711a48c45498fc05915e67db033, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 208
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: PurpleSlayerFish.Game.Processors.Combat.HealthObject.HealthData
+Assets:
+- Assets/Prefabs/Objects/Behaviours/RatBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/StalagnateBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/ObstacleBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/BombBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/PlayerBehaviour.prefab
+Dependencies: []

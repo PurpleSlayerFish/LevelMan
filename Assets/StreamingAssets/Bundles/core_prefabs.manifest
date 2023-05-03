@@ -1,0 +1,83 @@
+ManifestFileVersion: 0
+CRC: 11695303
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 34e506ac93c6250dfb38aeb0ef7e56bc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f08da00c5c389c6fa8f4d732ede97d8c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 39fa3d8997a24136984ca6e2c99902bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e97f2bcc5598430e9ab10494c0f5de29, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 902476e322674af181402742f338ed65, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp-firstpass
+  ClassName: SerializableDictionary.Scripts.KeyValuePair`2[System.String,UnityEngine.Transform]
+- AssemblyName: Assembly-CSharp-firstpass
+  ClassName: SerializableDictionary.Scripts.SerializableDictionary`2[System.String,UnityEngine.Transform]
+- AssemblyName: Cinemachine
+  ClassName: Cinemachine.CinemachineBlendDefinition
+- AssemblyName: Cinemachine
+  ClassName: Cinemachine.CinemachineBrain/BrainEvent
+- AssemblyName: Cinemachine
+  ClassName: Cinemachine.CinemachineBrain/VcamActivatedEvent
+- AssemblyName: Cinemachine
+  ClassName: Cinemachine.CinemachineVirtualCameraBase/TransitionParams
+- AssemblyName: Cinemachine
+  ClassName: Cinemachine.LensSettings
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputAction
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputActionMap
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputBinding
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputControlScheme
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.PlayerInput/ActionEvent
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.PlayerInput/ControlsChangedEvent
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.PlayerInput/DeviceLostEvent
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.PlayerInput/DeviceRegainedEvent
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+Assets:
+- Assets/Prefabs/_Core/[MainCamera].prefab
+- Assets/Prefabs/_Core/Transform.prefab
+- Assets/Prefabs/_Core/[VirtualCamera].prefab
+- Assets/Prefabs/_Core/[DesktopInputProvider].prefab
+- Assets/Prefabs/_Core/[ScenePoints].prefab
+Dependencies: []

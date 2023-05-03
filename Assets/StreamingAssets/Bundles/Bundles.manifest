@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2119496957
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scriptable_objects
+      Dependencies: {}
+    Info_1:
+      Name: core_prefabs
+      Dependencies: {}
+    Info_2:
+      Name: ui_windows
+      Dependencies:
+        Dependency_0: ui_elements
+    Info_3:
+      Name: ui_elements
+      Dependencies: {}
+    Info_4:
+      Name: audio_prefabs
+      Dependencies: {}
+    Info_5:
+      Name: effects_prefabs
+      Dependencies: {}
+    Info_6:
+      Name: ui_core
+      Dependencies: {}
+    Info_7:
+      Name: prefabs
+      Dependencies: {}
+    Info_8:
+      Name: project_context
+      Dependencies: {}

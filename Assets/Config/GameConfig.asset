@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44ddf304d37434e8e7a70bd7b4c49c8, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  _playerAttackOffset: 0.5
+  _playerIdleAnimation: 0
+  _playerWalkingAnimation: 1
+  _playerJumpAnimation: 2
+  _playerDeathAnimation: 10
+  _playerSillyAnimation: 20
+  _playerAttackAnimation: 10
+  _playerTakeAnimation: 20
+  _playerHitAnimation: 30
+  _option1: 0.55
+  _stalagnateOffset: 0.75
+  _obstaclesOffset: 0.75
+  _obstaclesWidth: 2.8
+  _ratDespawnTime: 3
+  _ratDespawnDuration: 0.7
+  _ratOffset: 0.28

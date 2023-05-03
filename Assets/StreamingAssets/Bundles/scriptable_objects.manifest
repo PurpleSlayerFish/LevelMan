@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 1301993036
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9b72fa1e94c3cd1843630baaa6ea9e05
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cbaac4f75df54f883192cc2ac26f825c
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 675bbcef96bb40a587668ab15d68cd5f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f44ddf304d37434e8e7a70bd7b4c49c8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 605e3721906f42fc822fbdf417b7a67f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ae35a568501045568e72692298efad49, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: PurpleSlayerFish.Core.Services.Pools.Config.AudioPoolData
+- AssemblyName: Assembly-CSharp
+  ClassName: PurpleSlayerFish.Core.Services.Pools.Config.BehaviourPoolData
+- AssemblyName: Assembly-CSharp
+  ClassName: PurpleSlayerFish.Core.Services.Pools.Config.EffectsPoolData
+Assets:
+- Assets/Config/Pools/EffectsPoolConfig.asset
+- Assets/Config/GameConfig.asset
+- Assets/Config/Pools/BehaviourPoolConfig.asset
+- Assets/Config/Pools/AudioPoolConfig.asset
+Dependencies: []

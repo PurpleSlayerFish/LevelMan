@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 455086973
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 32a0e30c84f2baa7de77c3c8f6088f3b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 62300e8b221528e3259e2c82802c0d34
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: a828517820a744bcbfd1cb0e8faf64fa, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Audio/TransitionAudio.prefab
+- Assets/Prefabs/Audio/CloseAudio.prefab
+Dependencies: []

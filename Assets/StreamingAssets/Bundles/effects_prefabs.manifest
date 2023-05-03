@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 1110374118
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ec14ee2411c43c5bcc892ded63a5440f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8bffb343166bef2ba20addf84b2bb2e9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: cbce5a82a82149a0abbed7f9c4c1c6c8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Effects/Explosion.prefab
+Dependencies: []
