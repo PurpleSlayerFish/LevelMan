@@ -56,7 +56,7 @@ namespace PurpleSlayerFish.Game.Behaviours.Movement
 
         public void Rotate()
         {
-            if (Agent.hasPath)
+            if (Agent.hasPath && Agent.path.corners.Length > 0)
                 _direction = Agent.path.corners[Mathf.Min(1, Agent.path.corners.Length - 1)] - transform.position;
             else if (Target != null)
                 _direction = Target.position - transform.position;

@@ -17,10 +17,9 @@ namespace PurpleSlayerFish.Game.Behaviours
 {
     public class PlayerBehaviour : AbstractBehaviour, ICombat
     {
-        [Inject] private TooltipProvider _tooltipProvider;
+        [Inject] private TooltipManager _tooltipManager;
         [Inject] private IInputProvider<InputData> _inputProvider;
         [Inject] private CinemachineVirtualCamera _virtualCamera;
-        [Inject] private ObstacleController _obstacleController;
         
         [SerializeField] private AbstractCombatProcessor _combatProcessor;
         
@@ -29,8 +28,7 @@ namespace PurpleSlayerFish.Game.Behaviours
         
         public ManagedNavAgentMovementProcessor MovementProcessor;
         public AnimationProcessor AnimationProcessor;
-        public PlayerInteractionProcessor InteractionProcessor;
-        public ObstacleBehaviour NearestObstacle;
+        public PlayerInteractor Interactor;
 
         public AbstractCombatProcessor CombatProcessor => _combatProcessor;
 
@@ -38,16 +36,9 @@ namespace PurpleSlayerFish.Game.Behaviours
         {
             CombatProcessor.Initialize();
             CombatProcessor.AnimationProcessor = AnimationProcessor;
-
-            // Install PlayerInput
-            _inputProvider.Data.OnActionMain += ActionPriority;
-            _inputProvider.Data.OnActionSecond += () =>
-            {
-                // _obstacleController.SpawnObstacle(player);
-            };
-            _inputProvider.Data.OnAttack += () => CombatProcessor.Attack();
-
+            Interactor.Initialize();
             MovementProcessor.playerBehaviour = this;
+            _inputProvider.Data.OnAttack += () => CombatProcessor.Attack();
         }
 
         private void Update()
@@ -55,7 +46,6 @@ namespace PurpleSlayerFish.Game.Behaviours
             CalculateDirection();
             MovementProcessor.Move(_direction);
             AnimationProcessor.WalkingState(_direction);
-            CheckNearestObstacle();
         }
 
         private void CalculateDirection()
@@ -63,20 +53,6 @@ namespace PurpleSlayerFish.Game.Behaviours
             _direction = new Vector3(_inputProvider.Data.HorizontalAxis, transform.position.y,
                 _inputProvider.Data.VerticalAxis).normalized;
             _direction = _mathUtils.Direction3dFromRotate(_virtualCamera.transform.eulerAngles.y, _direction);
-        }
-
-        private void CheckNearestObstacle() => NearestObstacle = _obstacleController.CheckNearestObstacle(transform.position);
-
-        private void TryJump()
-        {
-            if (NearestObstacle == null)
-                return;
-            MovementProcessor.JumpOverObstacle(NearestObstacle);
-        }
-
-        private void ActionPriority()
-        {
-            TryJump();
         }
     }
 }

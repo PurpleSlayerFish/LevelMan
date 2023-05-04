@@ -15,7 +15,8 @@ namespace PurpleSlayerFish.Game.Processors.Combat
         [Inject] private IUiContainer _uiContainer;
         [Inject] private RatController _ratController;
         [Inject] private StalagnateController _stalagnateController;
-        [SerializeField] private Transform _attackPivot;
+        
+        public Transform AttackPivot;
 
         private AbstractCombatProcessor _outOverlaped;
 
@@ -57,14 +58,16 @@ namespace PurpleSlayerFish.Game.Processors.Combat
         
         private void CheckIntersections()
         {
-            if (_ratController.CheckIntersections(_attackPivot.position, out _outOverlaped, IntersectionOffset + _gameConfig.RatOffset))
+            if (_ratController.CheckIntersections(AttackPivot.position, out _outOverlaped, IntersectionOffset + _gameConfig.RatOffset))
                 return;
-            if (_stalagnateController.CheckIntersections(_attackPivot.position, out _outOverlaped, IntersectionOffset + _gameConfig.StalagnateOffset))
+            if (_stalagnateController.CheckIntersections(AttackPivot.position, out _outOverlaped, IntersectionOffset + _gameConfig.StalagnateOffset))
                 return;
         }
 
         private async void OnAnimateHit(int value)
         {
+            if (AnimationProcessor.CurrentActionState != _gameConfig.PlayerIdleAnimation)
+                return;
             AnimationProcessor.ActionState(_gameConfig.PlayerHitAnimation);
             await Task.Delay(Mathf.RoundToInt(_gameConfig.PlayerHitDuration * 1000));
             AnimationProcessor.ActionState(_gameConfig.PlayerIdleAnimation);

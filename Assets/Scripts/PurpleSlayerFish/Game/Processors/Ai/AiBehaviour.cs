@@ -35,6 +35,11 @@ namespace PurpleSlayerFish.Game.Processors.Ai
         public void Initialize(AbstractCombatProcessor target)
         {
             _playerTarget = target;
+            Initialize();
+        }
+
+        public override void Initialize()
+        {
             _combatProcessor.Target = _playerTarget;
             _combatProcessor.AnimationProcessor = AnimationProcessor;
             _combatProcessor.IntersectionOffset = IntersectionOffset;

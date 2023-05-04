@@ -15,8 +15,8 @@ namespace PurpleSlayerFish.Game.Behaviours.Animation
         private int _currentActionState;
         private bool _isDead;
 
-        // public int CurrentWalkingState => _currentWalkingState;
-        // public int CurrentActionState => _currentActionState;
+        public int CurrentWalkingState => _currentWalkingState;
+        public int CurrentActionState => _currentActionState;
 
         public void WalkingState(Vector3 direction)
         {

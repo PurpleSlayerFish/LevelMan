@@ -13,18 +13,19 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: 
   _playerAttackOffset: 0.5
+  _playerHitDuration: 0.4
   _playerIdleAnimation: 0
   _playerWalkingAnimation: 1
   _playerJumpAnimation: 2
-  _playerDeathAnimation: 10
   _playerSillyAnimation: 20
   _playerAttackAnimation: 10
   _playerTakeAnimation: 20
   _playerHitAnimation: 30
   _option1: 0.55
   _stalagnateOffset: 0.75
-  _obstaclesOffset: 0.75
+  _obstaclesOffset: 0.95
   _obstaclesWidth: 2.8
+  _obstacleDespawnDuration: 0.7
   _ratDespawnTime: 3
   _ratDespawnDuration: 0.7
   _ratOffset: 0.28

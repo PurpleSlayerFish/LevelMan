@@ -31,6 +31,7 @@ namespace PurpleSlayerFish.Core.Installers
         private EffectsPoolProvider _effectsPoolProvider;
         private BehaviourPoolProvider _behaviourPoolProvider;
         private AudioPoolProvider _audioPoolProvider;
+        private FloatingCanvasPoolProvider _floatingCanvasPoolProvider;
 
         public override void InstallBindings()
         {
@@ -59,7 +60,6 @@ namespace PurpleSlayerFish.Core.Installers
             Container.BindInstance(_assetProvider.GetScriptableObject<GameConfig>()).AsSingle();
             Container.BindInstance(_assetProvider.Instantiate<Camera>(GameGlobal.CORE_BUNDLE, GameGlobal.CAMERA_PREFAB)).AsSingle();
             Container.BindInstance(_assetProvider.Instantiate<CinemachineVirtualCamera>(GameGlobal.CORE_BUNDLE, GameGlobal.VIRTUAL_CAMERA_PREFAB)).AsSingle();
-            Container.BindInstance(Container.Instantiate<TooltipProvider>()).AsSingle();
         }
 
         private void BindPools()
@@ -67,8 +67,10 @@ namespace PurpleSlayerFish.Core.Installers
             BindPoolProvider<EffectsPoolProvider, EffectsPoolData>(out _effectsPoolProvider);
             BindPoolProvider<BehaviourPoolProvider, BehaviourPoolData>(out _behaviourPoolProvider);
             BindPoolProvider<AudioPoolProvider, AudioPoolData>(out _audioPoolProvider);
+            BindPoolProvider<FloatingCanvasPoolProvider, FloatingCanvasPoolData>(out _floatingCanvasPoolProvider);
             Container.BindInstance(Container.Instantiate<EffectsManager>()).AsSingle();
             Container.BindInstance(Container.Instantiate<AudioManager>()).AsSingle();
+            Container.BindInstance(Container.Instantiate<TooltipManager>()).AsSingle();
 
             void BindPoolProvider<T1, T2>(out T1 poolProvider) where T1 : IPoolProvider<T2> where T2 : PoolData
             {

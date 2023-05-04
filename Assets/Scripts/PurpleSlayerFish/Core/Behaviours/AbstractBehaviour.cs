@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+﻿using PurpleSlayerFish.Game;
+using UnityEngine;
 
 namespace PurpleSlayerFish.Core.Behaviours
 {
-    public class AbstractBehaviour : MonoBehaviour
+    public abstract class AbstractBehaviour : MonoBehaviour, IInitializable
     {
-        public virtual void Initialize() {}
-        
+        public abstract void Initialize();
     }
 }

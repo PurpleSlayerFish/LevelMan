@@ -13,10 +13,6 @@ MonoBehaviour:
   m_Name: BehaviourPoolConfig
   m_EditorClassIdentifier: 
   _poolData:
-  - _prefabName: BombBehaviour
-    _bundleName: prefabs
-    _defaultCapacity: 3
-    _maxPoolSize: 5
   - _prefabName: RatBehaviour
     _bundleName: prefabs
     _defaultCapacity: 3
@@ -29,3 +25,15 @@ MonoBehaviour:
     _bundleName: prefabs
     _defaultCapacity: 10
     _maxPoolSize: 15
+  - _prefabName: SandBehaviour
+    _bundleName: prefabs
+    _defaultCapacity: 5
+    _maxPoolSize: 10
+  - _prefabName: ShroomBehaviour
+    _bundleName: prefabs
+    _defaultCapacity: 5
+    _maxPoolSize: 10
+  - _prefabName: PotBehaviour
+    _bundleName: prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1

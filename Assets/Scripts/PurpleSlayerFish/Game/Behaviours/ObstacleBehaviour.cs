@@ -4,6 +4,7 @@ using PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig;
 using PurpleSlayerFish.Game.Behaviours.Movement;
 using PurpleSlayerFish.Game.Processors.Combat;
 using PurpleSlayerFish.Game.Processors.Combat.Impls;
+using PurpleSlayerFish.Game.Processors.InteractionProcessor;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
@@ -18,6 +19,7 @@ namespace PurpleSlayerFish.Game.Behaviours
         public AbstractCombatProcessor CombatProcessor => _combatProcessor;
         
         public MovementProcessor MovementProcessor;
+        public ObstacleInteraction ObstacleInteraction;
         public Transform Pivot0;
         public Transform Pivot1;
         public Transform Link0;

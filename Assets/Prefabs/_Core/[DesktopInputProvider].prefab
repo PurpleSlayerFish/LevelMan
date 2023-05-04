@@ -104,7 +104,7 @@ MonoBehaviour:
     m_ActionId: 898ca1e5-31fe-4316-b4c6-da9f170acea5
     m_ActionName: KeyboardMaps/Escape[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: DefaultScheme
-  m_DefaultActionMap: KeyboardMouse
+  m_DefaultControlScheme: KM
+  m_DefaultActionMap: KM
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

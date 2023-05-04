@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df28ae28fc234609ab89666085a9a91a, type: 3}
   m_Name: PlayerAttack
   m_EditorClassIdentifier: 
-  _duration: 2
+  _damage: 1
+  _summaryDuration: 3
+  _activeDuration: 2.9
+  _activeDelay: 0.05

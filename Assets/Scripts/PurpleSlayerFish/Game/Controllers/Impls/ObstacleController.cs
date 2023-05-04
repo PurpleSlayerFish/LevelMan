@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using DG.Tweening;
-using PurpleSlayerFish.Core.Services;
+﻿using DG.Tweening;
 using PurpleSlayerFish.Core.Services.Pools.Config;
 using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
 using PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig;
 using PurpleSlayerFish.Game.Behaviours;
-using PurpleSlayerFish.Game.Processors.Combat;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
@@ -16,6 +13,7 @@ namespace PurpleSlayerFish.Game.Controllers
     {
         [Inject] private GameConfig _gameConfig;
         [Inject] private IPoolProvider<BehaviourPoolData> _poolProvider;
+        [Inject] private InteractionController _interactionController;
 
         private float _navMeshOffset = NavMesh.GetSettingsByID(0).voxelSize;
 
@@ -32,6 +30,7 @@ namespace PurpleSlayerFish.Game.Controllers
         {
             var obstacle = _poolProvider.Get<ObstacleBehaviour>();
             _intersectors.Add(obstacle);
+            _interactionController.Interactions.Add(obstacle.ObstacleInteraction);
             Drop(dropPosition, out Vector3 position, out float rotation);
             obstacle.MovementProcessor.Warp(position);
             obstacle.transform.eulerAngles = Vector3.up * rotation;
@@ -39,18 +38,23 @@ namespace PurpleSlayerFish.Game.Controllers
             obstacle.CombatProcessor.OnDeath += () => Kill(obstacle);
         }
         
-        public void Kill(ObstacleBehaviour obstacle)
+        public void Kill(ObstacleBehaviour obstacle, bool instantly = false)
         {
-            _intersectors.Remove(obstacle);
-            _poolProvider.Release(obstacle);
-            obstacle.transform.DOMoveY(-1.5f, _gameConfig.ObstacleDespawnDuration)
-                .SetRelative()
-                .SetDelay(_gameConfig.RatDespawnTime)
-                .OnComplete(() =>
-                {
-                    _intersectors.Remove(obstacle);
-                    _poolProvider.Release(obstacle);
-                });
+            if (instantly)
+            {
+                _interactionController.Interactions.Remove(obstacle.ObstacleInteraction);
+                _intersectors.Remove(obstacle);
+                _poolProvider.Release(obstacle);
+            }
+            else
+                obstacle.transform.DOMoveY(-1.5f, _gameConfig.ObstacleDespawnDuration)
+                    .SetRelative()
+                    .SetDelay(_gameConfig.RatDespawnTime)
+                    .OnComplete(() =>
+                    {
+                        _intersectors.Remove(obstacle);
+                        _poolProvider.Release(obstacle);
+                    });
         }
         
         private void Drop(Vector3 origin, out Vector3 position, out float rotation)

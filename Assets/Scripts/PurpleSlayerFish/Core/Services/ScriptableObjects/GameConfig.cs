@@ -51,5 +51,10 @@ namespace PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig
         public float RatDespawnDuration => _ratDespawnDuration;
         [SerializeField] private float _ratOffset = 0.28f;
         public float RatOffset => _ratOffset;
+        
+        
+        [Header("Interactions Options")]
+        [SerializeField] private float _interactionOffset = 1f;
+        public float InteractionOffset => _interactionOffset;
     }
 }

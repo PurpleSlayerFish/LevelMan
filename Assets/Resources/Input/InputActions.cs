@@ -24,13 +24,13 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     ""name"": ""InputActions"",
     ""maps"": [
         {
-            ""name"": ""New action map1"",
-            ""id"": ""1a08080f-1634-416b-aef6-8ddacedb1ad1"",
+            ""name"": ""KM"",
+            ""id"": ""9883ef32-aa50-420c-a233-fbb2adddbab1"",
             ""actions"": [
                 {
                     ""name"": ""VerticalAxis"",
                     ""type"": ""Button"",
-                    ""id"": ""fa067176-93de-4a05-a491-399f8067e18b"",
+                    ""id"": ""7e7c90a7-b6ee-4c7e-8608-98d1639c8cc1"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -39,7 +39,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""HorizontalAxis"",
                     ""type"": ""Button"",
-                    ""id"": ""12851e32-96f2-498c-b324-d1155c773c3c"",
+                    ""id"": ""8f3ab89a-cf0d-4329-a0ff-227108e25efe"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -48,7 +48,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Escape"",
                     ""type"": ""Button"",
-                    ""id"": ""6a980528-6037-47f3-9400-8745bf500ff8"",
+                    ""id"": ""32007114-1d33-404c-8537-a7add1c3e5fb"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -57,7 +57,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""ActionMain"",
                     ""type"": ""Button"",
-                    ""id"": ""5034d72a-6f93-412d-acac-4b9388a8040b"",
+                    ""id"": ""ee1df662-a7d1-4cf0-8b61-41a7a37dc0d2"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -66,7 +66,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""ActionSecond"",
                     ""type"": ""Button"",
-                    ""id"": ""95461f15-046d-4dbe-a4be-f39b37036f36"",
+                    ""id"": ""16d44631-7d0a-46ac-a5ba-c5a0da4721db"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -75,7 +75,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Attack"",
                     ""type"": ""Button"",
-                    ""id"": ""c045b84f-1987-4192-94a4-70dbddb01576"",
+                    ""id"": ""e937376c-b08c-4872-b236-e22b01684f35"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -85,7 +85,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""fbe7ac68-02f4-4186-94ec-f126cd4ccba1"",
+                    ""id"": ""126f220d-bb91-44b8-a8ef-6d1480a08563"",
                     ""path"": ""1DAxis"",
                     ""interactions"": ""Hold,Press"",
                     ""processors"": """",
@@ -96,29 +96,29 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""866f9ba8-741c-4b3d-9875-01049b5e21cd"",
+                    ""id"": ""ab76f7d5-9624-457c-b04f-099e625bb388"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""VerticalAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""f59c3ab1-26d0-4870-95aa-efcd8ee162f8"",
+                    ""id"": ""78e8d051-f999-47f8-b57a-2350e4ce02e9"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""VerticalAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""1D Axis"",
-                    ""id"": ""973644cc-9e9d-4f12-8af5-643d9d7d8185"",
+                    ""id"": ""2ce9af30-d150-4f55-90ab-e31e7aec5340"",
                     ""path"": ""1DAxis"",
                     ""interactions"": ""Hold,Press"",
                     ""processors"": """",
@@ -129,66 +129,66 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""a51825eb-ecc2-4013-b7bb-140de8ac474c"",
+                    ""id"": ""3cfd610b-b353-4683-9814-b0fd8edcb332"",
                     ""path"": ""<Keyboard>/#(A)"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""HorizontalAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""0513fc99-5906-4321-9f66-d17748d56a2c"",
+                    ""id"": ""e8a54f79-7871-4a91-aeb9-ddd21c2719be"",
                     ""path"": ""<Keyboard>/#(D)"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""HorizontalAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
-                    ""id"": ""413da58d-91ed-491b-afdf-42c93dcd1913"",
+                    ""id"": ""c2f66801-c617-49b2-829f-a8d4c807dcc4"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""Escape"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""aa723fb7-5f03-46ba-94c1-1e86f2286fc7"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""id"": ""4e20720e-f97a-409e-a5ff-a9bc0bb6bb09"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""ActionMain"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9d69dd2e-228f-4370-b140-2446bfe2146b"",
-                    ""path"": ""<Mouse>/rightButton"",
+                    ""id"": ""d3adf8e0-9ab5-4e31-b1b8-57af1b0161ef"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""ActionSecond"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""5f6849b9-8fe8-43ce-a284-f6f218da21e1"",
+                    ""id"": ""4a16584e-70f6-4d2e-b8f4-dbaedec7f272"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
-                    ""groups"": ""DefaultScheme"",
+                    ""groups"": ""KM"",
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -198,8 +198,8 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": [
         {
-            ""name"": ""DefaultScheme"",
-            ""bindingGroup"": ""DefaultScheme"",
+            ""name"": ""KM"",
+            ""bindingGroup"": ""KM"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
@@ -215,14 +215,14 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         }
     ]
 }");
-        // New action map1
-        m_Newactionmap1 = asset.FindActionMap("New action map1", throwIfNotFound: true);
-        m_Newactionmap1_VerticalAxis = m_Newactionmap1.FindAction("VerticalAxis", throwIfNotFound: true);
-        m_Newactionmap1_HorizontalAxis = m_Newactionmap1.FindAction("HorizontalAxis", throwIfNotFound: true);
-        m_Newactionmap1_Escape = m_Newactionmap1.FindAction("Escape", throwIfNotFound: true);
-        m_Newactionmap1_ActionMain = m_Newactionmap1.FindAction("ActionMain", throwIfNotFound: true);
-        m_Newactionmap1_ActionSecond = m_Newactionmap1.FindAction("ActionSecond", throwIfNotFound: true);
-        m_Newactionmap1_Attack = m_Newactionmap1.FindAction("Attack", throwIfNotFound: true);
+        // KM
+        m_KM = asset.FindActionMap("KM", throwIfNotFound: true);
+        m_KM_VerticalAxis = m_KM.FindAction("VerticalAxis", throwIfNotFound: true);
+        m_KM_HorizontalAxis = m_KM.FindAction("HorizontalAxis", throwIfNotFound: true);
+        m_KM_Escape = m_KM.FindAction("Escape", throwIfNotFound: true);
+        m_KM_ActionMain = m_KM.FindAction("ActionMain", throwIfNotFound: true);
+        m_KM_ActionSecond = m_KM.FindAction("ActionSecond", throwIfNotFound: true);
+        m_KM_Attack = m_KM.FindAction("Attack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -281,34 +281,34 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // New action map1
-    private readonly InputActionMap m_Newactionmap1;
-    private List<INewactionmap1Actions> m_Newactionmap1ActionsCallbackInterfaces = new List<INewactionmap1Actions>();
-    private readonly InputAction m_Newactionmap1_VerticalAxis;
-    private readonly InputAction m_Newactionmap1_HorizontalAxis;
-    private readonly InputAction m_Newactionmap1_Escape;
-    private readonly InputAction m_Newactionmap1_ActionMain;
-    private readonly InputAction m_Newactionmap1_ActionSecond;
-    private readonly InputAction m_Newactionmap1_Attack;
-    public struct Newactionmap1Actions
+    // KM
+    private readonly InputActionMap m_KM;
+    private List<IKMActions> m_KMActionsCallbackInterfaces = new List<IKMActions>();
+    private readonly InputAction m_KM_VerticalAxis;
+    private readonly InputAction m_KM_HorizontalAxis;
+    private readonly InputAction m_KM_Escape;
+    private readonly InputAction m_KM_ActionMain;
+    private readonly InputAction m_KM_ActionSecond;
+    private readonly InputAction m_KM_Attack;
+    public struct KMActions
     {
         private @InputActions m_Wrapper;
-        public Newactionmap1Actions(@InputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @VerticalAxis => m_Wrapper.m_Newactionmap1_VerticalAxis;
-        public InputAction @HorizontalAxis => m_Wrapper.m_Newactionmap1_HorizontalAxis;
-        public InputAction @Escape => m_Wrapper.m_Newactionmap1_Escape;
-        public InputAction @ActionMain => m_Wrapper.m_Newactionmap1_ActionMain;
-        public InputAction @ActionSecond => m_Wrapper.m_Newactionmap1_ActionSecond;
-        public InputAction @Attack => m_Wrapper.m_Newactionmap1_Attack;
-        public InputActionMap Get() { return m_Wrapper.m_Newactionmap1; }
+        public KMActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @VerticalAxis => m_Wrapper.m_KM_VerticalAxis;
+        public InputAction @HorizontalAxis => m_Wrapper.m_KM_HorizontalAxis;
+        public InputAction @Escape => m_Wrapper.m_KM_Escape;
+        public InputAction @ActionMain => m_Wrapper.m_KM_ActionMain;
+        public InputAction @ActionSecond => m_Wrapper.m_KM_ActionSecond;
+        public InputAction @Attack => m_Wrapper.m_KM_Attack;
+        public InputActionMap Get() { return m_Wrapper.m_KM; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(Newactionmap1Actions set) { return set.Get(); }
-        public void AddCallbacks(INewactionmap1Actions instance)
+        public static implicit operator InputActionMap(KMActions set) { return set.Get(); }
+        public void AddCallbacks(IKMActions instance)
         {
-            if (instance == null || m_Wrapper.m_Newactionmap1ActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_Newactionmap1ActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_KMActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_KMActionsCallbackInterfaces.Add(instance);
             @VerticalAxis.started += instance.OnVerticalAxis;
             @VerticalAxis.performed += instance.OnVerticalAxis;
             @VerticalAxis.canceled += instance.OnVerticalAxis;
@@ -329,7 +329,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Attack.canceled += instance.OnAttack;
         }
 
-        private void UnregisterCallbacks(INewactionmap1Actions instance)
+        private void UnregisterCallbacks(IKMActions instance)
         {
             @VerticalAxis.started -= instance.OnVerticalAxis;
             @VerticalAxis.performed -= instance.OnVerticalAxis;
@@ -351,31 +351,31 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Attack.canceled -= instance.OnAttack;
         }
 
-        public void RemoveCallbacks(INewactionmap1Actions instance)
+        public void RemoveCallbacks(IKMActions instance)
         {
-            if (m_Wrapper.m_Newactionmap1ActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_KMActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(INewactionmap1Actions instance)
+        public void SetCallbacks(IKMActions instance)
         {
-            foreach (var item in m_Wrapper.m_Newactionmap1ActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_KMActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_Newactionmap1ActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_KMActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public Newactionmap1Actions @Newactionmap1 => new Newactionmap1Actions(this);
-    private int m_DefaultSchemeSchemeIndex = -1;
-    public InputControlScheme DefaultSchemeScheme
+    public KMActions @KM => new KMActions(this);
+    private int m_KMSchemeIndex = -1;
+    public InputControlScheme KMScheme
     {
         get
         {
-            if (m_DefaultSchemeSchemeIndex == -1) m_DefaultSchemeSchemeIndex = asset.FindControlSchemeIndex("DefaultScheme");
-            return asset.controlSchemes[m_DefaultSchemeSchemeIndex];
+            if (m_KMSchemeIndex == -1) m_KMSchemeIndex = asset.FindControlSchemeIndex("KM");
+            return asset.controlSchemes[m_KMSchemeIndex];
         }
     }
-    public interface INewactionmap1Actions
+    public interface IKMActions
     {
         void OnVerticalAxis(InputAction.CallbackContext context);
         void OnHorizontalAxis(InputAction.CallbackContext context);

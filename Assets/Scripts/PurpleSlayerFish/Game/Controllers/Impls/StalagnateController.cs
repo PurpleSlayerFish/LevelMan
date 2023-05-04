@@ -1,13 +1,8 @@
-﻿using System.Collections.Generic;
-using PurpleSlayerFish.Core.Services;
-using PurpleSlayerFish.Core.Services.Pools.Config;
+﻿using PurpleSlayerFish.Core.Services.Pools.Config;
 using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
 using PurpleSlayerFish.Core.Services.ScenePoints;
 using PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig;
 using PurpleSlayerFish.Game.Behaviours;
-using PurpleSlayerFish.Game.Processors.Combat;
-using UnityEngine;
-using UnityEngine.AI;
 using Zenject;
 
 namespace PurpleSlayerFish.Game.Controllers
@@ -19,11 +14,11 @@ namespace PurpleSlayerFish.Game.Controllers
         [Inject] private IPoolProvider<BehaviourPoolData> _poolProvider;
         [Inject] private ScenePoints _scenePoints;
 
-        public void SpawnStalagmate()
+        public void SpawnStalagmate(string key)
         {
             var stalagnate = _poolProvider.Get<StalagnateBehaviour>();
             _intersectors.Add(stalagnate);
-            stalagnate.transform.position = _scenePoints.Points.Get("STALAGMATE_1").position;
+            stalagnate.transform.position = _scenePoints.Points.Get(key).position;
             stalagnate.CombatProcessor.Initialize();
             stalagnate.CombatProcessor.OnDeath = () => Drop(stalagnate);
         }

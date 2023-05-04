@@ -11,6 +11,8 @@ namespace PurpleSlayerFish.Game.Processors.Ai
         
         public override void Launch(AiBehaviour behaviour)
         {
+            behaviour.MovementProcessor.Agent.enabled = false;
+            behaviour.MovementProcessor.Agent.enabled = true;
             behaviour.AnimationProcessor.WalkingState(Vector3.forward);
             behaviour.MovementProcessor.Target = (behaviour.CombatProcessor as AiCombatProcessor).Target.transform;
             behaviour.MovementProcessor.FollowThreshold = _pathRebuildOffset;

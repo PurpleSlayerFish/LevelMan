@@ -13,5 +13,10 @@ namespace PurpleSlayerFish.Game.Behaviours
         
         [SerializeField] private AbstractCombatProcessor _combatProcessor;
         public AbstractCombatProcessor CombatProcessor => _combatProcessor;
+        
+        public override void Initialize()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

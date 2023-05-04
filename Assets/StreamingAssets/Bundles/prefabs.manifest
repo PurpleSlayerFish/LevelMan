@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3507871932
+CRC: 3110983039
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: dac40fa0b7b6897117485be0d443bbd1
+    Hash: 78aaa0291e686b5cbcb542132224af70
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 606cb971998612965010d6ab9460040f
+    Hash: b5acfe037657df59590343e68b1de2d8
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,10 +25,6 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
-- Class: 54
-  Script: {instanceID: 0}
-- Class: 65
-  Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
 - Class: 90
@@ -36,8 +32,6 @@ ClassTypes:
 - Class: 91
   Script: {instanceID: 0}
 - Class: 95
-  Script: {instanceID: 0}
-- Class: 111
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 73d7c7fcbe5245a5833d348d8b7db79f, type: 3}
@@ -60,8 +54,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: c3283afd09be4f0c981259f264fd6e9b, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: ea69a9c7c2a84411b85c0c9a140dcb3b, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: fdea5c6f28664e20940b4fe15e666dc6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: aeb12073195942f585ef7df93c2f26bb, type: 3}
@@ -75,27 +67,38 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 7f857a73d0634738b45102689455835c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 879a3711a48c45498fc05915e67db033, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 602a971ec8fe43b89f67241421876334, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3f9d5a3ec50141a2a1d3619a82396209, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 38c009d04efb4570b96b83c2f227fa1e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8752cffef21b4561b4ed65bc45a79b8c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b1758a0e2317456daeebd68414dc7bb6, type: 3}
 - Class: 115
   Script: {instanceID: 0}
-- Class: 136
-  Script: {instanceID: 0}
 - Class: 137
+  Script: {instanceID: 0}
+- Class: 191
   Script: {instanceID: 0}
 - Class: 195
   Script: {instanceID: 0}
 - Class: 208
   Script: {instanceID: 0}
-- Class: 212
-  Script: {instanceID: 0}
-- Class: 213
-  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp-firstpass
+  ClassName: SerializableDictionary.Scripts.KeyValuePair`2[System.String,UnityEngine.GameObject]
+- AssemblyName: Assembly-CSharp-firstpass
+  ClassName: SerializableDictionary.Scripts.SerializableDictionary`2[System.String,UnityEngine.GameObject]
 - AssemblyName: Assembly-CSharp
   ClassName: PurpleSlayerFish.Game.Processors.Combat.HealthObject.HealthData
 Assets:
 - Assets/Prefabs/Objects/Behaviours/RatBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/ShroomBehaviour.prefab
 - Assets/Prefabs/Objects/Behaviours/StalagnateBehaviour.prefab
 - Assets/Prefabs/Objects/Behaviours/ObstacleBehaviour.prefab
-- Assets/Prefabs/Objects/Behaviours/BombBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/SandBehaviour.prefab
 - Assets/Prefabs/Objects/Behaviours/PlayerBehaviour.prefab
 Dependencies: []
