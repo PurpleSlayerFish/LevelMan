@@ -199,10 +199,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 602a971ec8fe43b89f67241421876334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _offset: 0.5
   _obstacleBehaviour: {fileID: 2889738372836588948}
   _objectKey: StalagnateBehaviour
   _tooltipFirstPivot: {fileID: 1739007683898248163}
   _tooltipSecondPivot: {fileID: 7156608743963461147}
+  IsDrop: 1
 --- !u!208 &117749274671004676
 NavMeshObstacle:
   m_ObjectHideFlags: 0

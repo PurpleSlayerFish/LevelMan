@@ -1,11 +1,10 @@
-﻿using PurpleSlayerFish.Core.Services.Pools.Config;
-using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
-using PurpleSlayerFish.Game.Behaviours;
-using PurpleSlayerFish.Game.Controllers;
+﻿using PurpleSlayerFish.Game.Behaviours;
+using PurpleSlayerFish.Game.Controllers.Impls;
+using PurpleSlayerFish.Game.Processors.Interaction.Interactors;
 using UnityEngine;
 using Zenject;
 
-namespace PurpleSlayerFish.Game.Processors.InteractionProcessor
+namespace PurpleSlayerFish.Game.Processors.Interaction
 {
     public class ShroomInteraction : AInteraction
     {

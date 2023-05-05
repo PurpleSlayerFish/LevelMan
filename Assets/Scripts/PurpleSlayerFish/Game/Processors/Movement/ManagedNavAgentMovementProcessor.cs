@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using DG.Tweening;
+﻿using DG.Tweening;
 using PurpleSlayerFish.Core.Services;
+using PurpleSlayerFish.Game.Behaviours;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace PurpleSlayerFish.Game.Behaviours.Movement
+namespace PurpleSlayerFish.Game.Processors.Movement
 {
     public class ManagedNavAgentMovementProcessor : MovementProcessor
     {
@@ -16,16 +14,14 @@ namespace PurpleSlayerFish.Game.Behaviours.Movement
         private VectorUtils _vectorUtils;
         private Vector3 _prevDirection;
         private Tweener _tempTweener;
-
-        public PlayerBehaviour playerBehaviour;
+        
+        public NavMeshAgent Agent => _agent; 
 
         public override void Move(Vector3 direction)
         {
             if (direction == Vector3.up)
                 return;
             Rotate(direction);
-            // if (CrossObstacle(direction*5))
-            //     return;
             _agent.Move(NextPosition(direction));
         }
 
@@ -54,10 +50,5 @@ namespace PurpleSlayerFish.Game.Behaviours.Movement
             
             _agent.enabled = true;
         }
-
-        // private bool CrossObstacle(Vector3 direction) =>
-        //     playerBehaviour.NearestObstacle != null
-        //     && _vectorUtils.IsPointInsideBox(transform.position + NextPosition(direction)
-        //         , playerBehaviour.NearestObstacle.Stop0.position, playerBehaviour.NearestObstacle.Stop1.position);
     }
 }

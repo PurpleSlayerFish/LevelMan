@@ -59,9 +59,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3949611391795804849, guid: 0809ea2caa51d744e88349e332a8fa2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4536448332735752883, guid: 0809ea2caa51d744e88349e332a8fa2f, type: 3}
       propertyPath: m_Name
       value: SandBehaviour
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536448332735752883, guid: 0809ea2caa51d744e88349e332a8fa2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5692311045411282387, guid: 0809ea2caa51d744e88349e332a8fa2f, type: 3}
       propertyPath: m_Center.x

@@ -2,13 +2,15 @@
 using PurpleSlayerFish.Core.Behaviours;
 using PurpleSlayerFish.Core.Services;
 using PurpleSlayerFish.Core.Services.Input;
+using PurpleSlayerFish.Core.Services.ScriptableObjects;
 using PurpleSlayerFish.Core.Services.Tooltips;
-using PurpleSlayerFish.Game.Behaviours.Animation;
-using PurpleSlayerFish.Game.Behaviours.Movement;
 using PurpleSlayerFish.Game.Controllers;
+using PurpleSlayerFish.Game.Processors;
+using PurpleSlayerFish.Game.Processors.Animation;
 using PurpleSlayerFish.Game.Processors.Combat;
 using PurpleSlayerFish.Game.Processors.Combat.Impls;
-using PurpleSlayerFish.Game.Processors.InteractionProcessor;
+using PurpleSlayerFish.Game.Processors.Interaction.Interactors;
+using PurpleSlayerFish.Game.Processors.Movement;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
@@ -17,7 +19,7 @@ namespace PurpleSlayerFish.Game.Behaviours
 {
     public class PlayerBehaviour : AbstractBehaviour, ICombat
     {
-        [Inject] private TooltipManager _tooltipManager;
+        [Inject] private GameConfig _gameConfig;
         [Inject] private IInputProvider<InputData> _inputProvider;
         [Inject] private CinemachineVirtualCamera _virtualCamera;
         
@@ -29,6 +31,7 @@ namespace PurpleSlayerFish.Game.Behaviours
         public ManagedNavAgentMovementProcessor MovementProcessor;
         public AnimationProcessor AnimationProcessor;
         public PlayerInteractor Interactor;
+        public LightProcessor LightProcessor;
 
         public AbstractCombatProcessor CombatProcessor => _combatProcessor;
 
@@ -37,15 +40,27 @@ namespace PurpleSlayerFish.Game.Behaviours
             CombatProcessor.Initialize();
             CombatProcessor.AnimationProcessor = AnimationProcessor;
             Interactor.Initialize();
-            MovementProcessor.playerBehaviour = this;
             _inputProvider.Data.OnAttack += () => CombatProcessor.Attack();
+            LightProcessor.Initialize();
+        }
+
+        public void AnimateStir()
+        {
+            
         }
 
         private void Update()
         {
             CalculateDirection();
             MovementProcessor.Move(_direction);
-            AnimationProcessor.WalkingState(_direction);
+            SetWalkAnimation();
+        }
+
+        private void SetWalkAnimation()
+        {
+            AnimationProcessor.WalkingState(_direction.x == 0 && _direction.z == 0 
+                ? _gameConfig.PlayerIdleAnimation 
+                : Interactor.IsBusy ? _gameConfig.PlayerWalkingAnimation : _gameConfig.PlayerRunAnimation);
         }
 
         private void CalculateDirection()

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3110983039
+CRC: 1384864320
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 78aaa0291e686b5cbcb542132224af70
+    Hash: 9b16061662296a6ecd55698d03eaf832
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b5acfe037657df59590343e68b1de2d8
+    Hash: 96f1c2cf2b8877c05abeb8ff454bffdb
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -33,8 +33,16 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 95
   Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 738f13a8b26c436e9cb397b43fb94260, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 602a971ec8fe43b89f67241421876334, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 73d7c7fcbe5245a5833d348d8b7db79f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: abad3c694ea34b98b59c59873b767601, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 2e5d2072fe7f4ebbadcc653e892d767d, type: 3}
 - Class: 114
@@ -50,13 +58,21 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 778a5792af894678a52ef9c6331533d0, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 38c009d04efb4570b96b83c2f227fa1e, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 4e2bacf3785b46069cadbb11fbdea211, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 3f9d5a3ec50141a2a1d3619a82396209, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: c3283afd09be4f0c981259f264fd6e9b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8752cffef21b4561b4ed65bc45a79b8c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fdea5c6f28664e20940b4fe15e666dc6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: aeb12073195942f585ef7df93c2f26bb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b1758a0e2317456daeebd68414dc7bb6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 7676c0fa37f4447286e47ea9331fdb4a, type: 3}
 - Class: 114
@@ -68,15 +84,7 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 879a3711a48c45498fc05915e67db033, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 602a971ec8fe43b89f67241421876334, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 3f9d5a3ec50141a2a1d3619a82396209, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 38c009d04efb4570b96b83c2f227fa1e, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 8752cffef21b4561b4ed65bc45a79b8c, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: b1758a0e2317456daeebd68414dc7bb6, type: 3}
+  Script: {fileID: 11500000, guid: 7a3ef4cbaed54106874447cbeb4d1e99, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 137
@@ -97,6 +105,8 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/Prefabs/Objects/Behaviours/RatBehaviour.prefab
 - Assets/Prefabs/Objects/Behaviours/ShroomBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/ColumnPartBehaviour.prefab
+- Assets/Prefabs/Objects/Behaviours/BrickBehaviour.prefab
 - Assets/Prefabs/Objects/Behaviours/StalagnateBehaviour.prefab
 - Assets/Prefabs/Objects/Behaviours/ObstacleBehaviour.prefab
 - Assets/Prefabs/Objects/Behaviours/SandBehaviour.prefab

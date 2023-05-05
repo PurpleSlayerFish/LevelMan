@@ -1,7 +1,7 @@
 ﻿using PurpleSlayerFish.Core.Ui.ElementManager.Elements;
 using UnityEngine;
 
-namespace PurpleSlayerFish.Core.Ui.Windows.ShopWindow
+namespace PurpleSlayerFish.Core.Ui.Windows.SettingsWindow
 {
     public class SettingsWindow : AbstractWindow<SettingsController>
     {

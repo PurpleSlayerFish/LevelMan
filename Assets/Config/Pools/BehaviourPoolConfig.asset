@@ -33,7 +33,7 @@ MonoBehaviour:
     _bundleName: prefabs
     _defaultCapacity: 5
     _maxPoolSize: 10
-  - _prefabName: PotBehaviour
+  - _prefabName: BrickBehaviour
     _bundleName: prefabs
-    _defaultCapacity: 1
-    _maxPoolSize: 1
+    _defaultCapacity: 3
+    _maxPoolSize: 3

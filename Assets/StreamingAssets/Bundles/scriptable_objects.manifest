@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 54301316
+CRC: 1680427393
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 61f3ad151669e9bc5360f9e68f48c0fa
+    Hash: 92d3242feb2ddef91f47d1f9d896ba2e
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a72680ec54178d9b1aecc20ee3d6d2a3
+    Hash: d7b8fd7dbf5e8f4b029af4c5de08159d
 HashAppended: 0
 ClassTypes:
 - Class: 114
@@ -14,11 +14,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: f44ddf304d37434e8e7a70bd7b4c49c8, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 1d8bea90138b4fad81429e8c23fba0ab, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca9129aa3891459b99e3e99d720cb4ec, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 605e3721906f42fc822fbdf417b7a67f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: ae35a568501045568e72692298efad49, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 1d8bea90138b4fad81429e8c23fba0ab, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
@@ -30,10 +32,13 @@ SerializeReferenceClassIdentifiers:
   ClassName: PurpleSlayerFish.Core.Services.Pools.Config.EffectsPoolData
 - AssemblyName: Assembly-CSharp
   ClassName: PurpleSlayerFish.Core.Services.Pools.Config.FloatingCanvasPoolData
+- AssemblyName: Assembly-CSharp
+  ClassName: PurpleSlayerFish.Game.ScriptableObjects.RatSpawnInfo
 Assets:
 - Assets/Config/Pools/EffectsPoolConfig.asset
 - Assets/Config/GameConfig.asset
 - Assets/Config/Pools/BehaviourPoolConfig.asset
+- Assets/Config/RatSpawnConfig.asset
 - Assets/Config/Pools/AudioPoolConfig.asset
 - Assets/Config/Pools/FloatingCanvasPoolConfig.asset
 Dependencies: []
