@@ -958,7 +958,6 @@ MonoBehaviour:
   _mainPlayerLight: {fileID: 7749829771604133001}
   _light1: {fileID: 2076843528733951950}
   _light2: {fileID: 3800396869871671614}
-  CurrentLightLevel: 0
 --- !u!114 &7139732132086924437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,7 +1030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6184464257399532350}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 4.5, z: 0}
+  m_LocalPosition: {x: 0, y: 6.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1050,8 +1049,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.61960787, g: 1, b: 0.6509804, a: 1}
-  m_Intensity: 2
-  m_Range: 8.2
+  m_Intensity: 2.2
+  m_Range: 8.75
   m_SpotAngle: 95
   m_InnerSpotAngle: 1
   m_CookieSize: 10
