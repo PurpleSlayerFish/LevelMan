@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PlayerAttack
   m_EditorClassIdentifier: 
   _damage: 1
-  _summaryDuration: 3
-  _activeDuration: 2.9
-  _activeDelay: 0.05
+  _summaryDuration: 0.8335
+  _activeDelay: 0.41675
+  _activeDuration: 0.1667

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3929788458
+CRC: 1837254400
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 104379fc3085d00f7c4c41822373a5e7
+    Hash: 01fc8a081a1ea7b1b6b2183d9ac1bcd1
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6f4819434bdac3baf6623ea984c486b2
+    Hash: 713f1a3e851c8b1096655e32c0794481
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -38,9 +38,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: a895cd0fdb944730ad96a1c63174abc2, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: e8dad77892c445a9ab685e40b7107f44, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4559564ace1248c28f93b30b41e85060, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3525c3a527b84c049ce1488facf53175, type: 3}
 - Class: 114
@@ -56,11 +60,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 222c50432d3c45968aa5b3e4a98c9281, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 059959025937486eac3920f6747b5c8c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: df1bf5de7e1b4f55a5b02af3d7a3d473, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f105fc154a544b399fb527c26731825f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 77d0fed1a3c343bf888c2eff89c359d1, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 213
@@ -114,9 +122,11 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.UI.SpriteState
 Assets:
 - Assets/Prefabs/UI/Windows/SplashWindow.prefab
+- Assets/Prefabs/UI/Windows/FinishWindow.prefab
 - Assets/Prefabs/UI/Windows/MainMenuWindow.prefab
 - Assets/Prefabs/UI/Windows/SettingsWindow.prefab
 - Assets/Prefabs/UI/Windows/DialogWindow.prefab
+- Assets/Prefabs/UI/Windows/LoseWindow.prefab
 - Assets/Prefabs/UI/Windows/TouchScreenWindow.prefab
 - Assets/Prefabs/UI/Windows/GameWindow.prefab
 - Assets/Prefabs/UI/Windows/PauseWindow.prefab

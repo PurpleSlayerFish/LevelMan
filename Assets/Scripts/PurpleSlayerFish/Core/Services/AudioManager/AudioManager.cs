@@ -4,7 +4,7 @@ using PurpleSlayerFish.Core.Services.Pools.Config;
 using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
 using Zenject;
 
-namespace PurpleSlayerFish.Core.Ui.AudioManager
+namespace PurpleSlayerFish.Core.Services.AudioManager
 {
     public class AudioManager
     {

@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using ThirdParty.Ultimate_Joystick.Scripts;
 
 [CanEditMultipleObjects]
 [CustomEditor( typeof( UltimateJoystick ) )]

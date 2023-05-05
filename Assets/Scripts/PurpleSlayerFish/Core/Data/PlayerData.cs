@@ -3,8 +3,10 @@
 namespace PurpleSlayerFish.Core.Data
 {
     [Serializable]
-    public class PlayerData
+    public class PlayerData : IStorableData
     {
-        public int Score;
+        public bool IsNew { get; set; } = true;
+
+        public int Bricks;
     }
 }

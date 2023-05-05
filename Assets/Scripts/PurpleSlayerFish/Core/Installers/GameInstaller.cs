@@ -2,16 +2,16 @@ using Cinemachine;
 using PurpleSlayerFish.Core.Data;
 using PurpleSlayerFish.Core.Global;
 using PurpleSlayerFish.Core.Services.AssetProvider;
+using PurpleSlayerFish.Core.Services.AudioManager;
 using PurpleSlayerFish.Core.Services.DataStorage;
 using PurpleSlayerFish.Core.Services.EffectsManager;
 using PurpleSlayerFish.Core.Services.Input;
-using PurpleSlayerFish.Core.Services.PauseService;
+using PurpleSlayerFish.Core.Services.Pause;
 using PurpleSlayerFish.Core.Services.Pools.Config;
 using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
 using PurpleSlayerFish.Core.Services.ScenePoints;
-using PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig;
+using PurpleSlayerFish.Core.Services.ScriptableObjects;
 using PurpleSlayerFish.Core.Services.Tooltips;
-using PurpleSlayerFish.Core.Ui.AudioManager;
 using PurpleSlayerFish.Core.Ui.Container;
 using PurpleSlayerFish.Core.Ui.Windows.GameWindow;
 using PurpleSlayerFish.Core.Ui.Windows.PauseWindow;
@@ -27,6 +27,7 @@ namespace PurpleSlayerFish.Core.Installers
         [Inject] private IAssetProvider _assetProvider;
         [Inject] private IUiContainer _uiContainer;
         [Inject] private SignalBus _signalBus;
+        [Inject] private IDataStorage<PlayerData> _dataStorage;
 
         private EffectsPoolProvider _effectsPoolProvider;
         private BehaviourPoolProvider _behaviourPoolProvider;
@@ -41,17 +42,20 @@ namespace PurpleSlayerFish.Core.Installers
             BindPools();
             BindUi();
             BindInput();
+            
+            _dataStorage.LoadCurrent();
+
         }
 
         private void BindSignals()
         {
             _signalBus.DeclareSignal<ScoreSubscription>();
+            _signalBus.DeclareSignal<HealthSubscription>();
         }
         
         private void BindInterfaces()
         {
             Container.BindInterfacesTo<PauseService>().AsSingle();
-            Container.BindInterfacesTo<PlayerPrefsStorage<PlayerData>>().AsSingle();
         }
 
         private void BindInstances()
@@ -84,6 +88,8 @@ namespace PurpleSlayerFish.Core.Installers
         {
             _uiContainer.InitializeWindow<GameWindow>();
             _uiContainer.InitializeWindow<PauseWindow>();
+            _uiContainer.InitializeWindow<LoseWindow>();
+            _uiContainer.InitializeWindow<FinishWindow>();
             _uiContainer.Show<GameController>();
         }
 

@@ -1,5 +1,7 @@
-﻿using PurpleSlayerFish.Core.Behaviours;
+﻿using System;
+using PurpleSlayerFish.Core.Behaviours;
 using PurpleSlayerFish.Game.Controllers;
+using PurpleSlayerFish.Game.Controllers.Impls;
 using PurpleSlayerFish.Game.Processors.Combat;
 using PurpleSlayerFish.Game.Processors.Combat.Impls;
 using UnityEngine;
@@ -14,9 +16,13 @@ namespace PurpleSlayerFish.Game.Behaviours
         [SerializeField] private AbstractCombatProcessor _combatProcessor;
         public AbstractCombatProcessor CombatProcessor => _combatProcessor;
         
+        public void Awake() => Initialize();
+
         public override void Initialize()
         {
-            throw new System.NotImplementedException();
+            _stalagnateController.Add(this);
+            CombatProcessor.Initialize();
+            CombatProcessor.OnDeath = () => _stalagnateController.Handle(this);
         }
     }
 }

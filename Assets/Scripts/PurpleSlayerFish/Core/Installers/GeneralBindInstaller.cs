@@ -21,7 +21,8 @@ namespace PurpleSlayerFish.Core.Installers
             _uiContainer = Container.Instantiate<UiContainer>();
             _uiContainer.Install(Container);
             Container.Bind<IUiContainer>().FromInstance(_uiContainer).AsSingle();
-            Container.Bind<IDataStorage<SettingsData>>().To<PlayerPrefsStorage<SettingsData>>().AsSingle();
+            Container.BindInterfacesTo<PlayerPrefsStorage<PlayerData>>().AsSingle();
+            Container.BindInterfacesTo<PlayerPrefsStorage<SettingsData>>().AsSingle();
         }
         
         private void OnDestroy()

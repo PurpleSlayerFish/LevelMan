@@ -1,7 +1,6 @@
-﻿using PurpleSlayerFish.Core.Behaviours;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace PurpleSlayerFish.Game.Behaviours.Animation
+namespace PurpleSlayerFish.Game.Processors.Animation
 {
     public class AnimationProcessor : MonoBehaviour
     {
@@ -10,24 +9,17 @@ namespace PurpleSlayerFish.Game.Behaviours.Animation
         private readonly int _walkingState = Animator.StringToHash("WALKING_STATE");
         private readonly int _actionState = Animator.StringToHash("ACTION_STATE");
         private readonly int _deadState = Animator.StringToHash("DEAD_STATE");
-        private int _nextWalkingState;
         private int _currentWalkingState;
         private int _currentActionState;
         private bool _isDead;
 
         public int CurrentWalkingState => _currentWalkingState;
         public int CurrentActionState => _currentActionState;
-
-        public void WalkingState(Vector3 direction)
-        {
-            _nextWalkingState = direction.x == 0 && direction.z == 0 ? 0 : 1;
-            if (_currentWalkingState == _nextWalkingState)
-                return;
-            WalkingState(_nextWalkingState);
-        }
         
         public void WalkingState(int value)
         {
+            if (_currentWalkingState == value)
+                return;
             _currentWalkingState = value;
             _animator.SetInteger(_walkingState, _currentWalkingState);
         }

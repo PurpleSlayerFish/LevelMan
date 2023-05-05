@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df28ae28fc234609ab89666085a9a91a, type: 3}
   m_Name: RatAttack
   m_EditorClassIdentifier: 
-  _duration: 1
+  _damage: 1
+  _summaryDuration: 0.6667
+  _activeDelay: 0.20001
+  _activeDuration: 0.313349

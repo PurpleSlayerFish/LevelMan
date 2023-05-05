@@ -1,10 +1,10 @@
 ﻿using System;
 using PurpleSlayerFish.Core.Behaviours;
-using PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig;
-using PurpleSlayerFish.Game.Behaviours.Movement;
+using PurpleSlayerFish.Core.Services.ScriptableObjects;
 using PurpleSlayerFish.Game.Processors.Combat;
 using PurpleSlayerFish.Game.Processors.Combat.Impls;
-using PurpleSlayerFish.Game.Processors.InteractionProcessor;
+using PurpleSlayerFish.Game.Processors.Interaction;
+using PurpleSlayerFish.Game.Processors.Movement;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
@@ -24,7 +24,7 @@ namespace PurpleSlayerFish.Game.Behaviours
         public Transform Pivot1;
         public Transform Link0;
         public Transform Link1;
-        
+
         public override void Initialize()
         {
             CombatProcessor.Initialize();

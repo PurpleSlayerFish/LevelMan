@@ -11,8 +11,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShroomBehaviour
       objectReference: {fileID: 0}
+    - target: {fileID: 63720251168575869, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 637545360580231551, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637545360580231551, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1226668320860329059, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
@@ -63,6 +71,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8075081803310262146, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075081803310262146, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_Center.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075081803310262146, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075081803310262146, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_Extents.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075081803310262146, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_Extents.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075081803310262146, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
+      propertyPath: m_Extents.z
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aea18ead98a2694e81a5e8a6af08bba, type: 3}
 --- !u!4 &4787798373715824473 stripped
@@ -87,7 +119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 233737349850355193, guid: bf6e88d3023c9a74185f42e08926346c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 233737349850355193, guid: bf6e88d3023c9a74185f42e08926346c, type: 3}
       propertyPath: m_LocalPosition.z

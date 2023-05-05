@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Drawing.Printing;
 using PurpleSlayerFish.Core.Behaviours;
-using PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig;
-using PurpleSlayerFish.Game.Behaviours.Animation;
-using PurpleSlayerFish.Game.Behaviours.Movement;
+using PurpleSlayerFish.Core.Services.ScriptableObjects;
 using PurpleSlayerFish.Game.Controllers;
+using PurpleSlayerFish.Game.Controllers.Impls;
 using PurpleSlayerFish.Game.Processors.Ai.States;
+using PurpleSlayerFish.Game.Processors.Animation;
 using PurpleSlayerFish.Game.Processors.Combat;
 using PurpleSlayerFish.Game.Processors.Combat.Impls;
+using PurpleSlayerFish.Game.Processors.Movement;
 using UnityEngine;
 using Zenject;
 

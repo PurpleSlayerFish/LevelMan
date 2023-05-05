@@ -1,10 +1,8 @@
-﻿using System;
-using Cinemachine;
-using PurpleSlayerFish.Core.Behaviours;
+﻿using Cinemachine;
 using UnityEngine;
 using Zenject;
 
-namespace PurpleSlayerFish.Game.Utils
+namespace PurpleSlayerFish.Core.Behaviours
 {
     public class FloatingCanvasBehaviour : AbstractBehaviour
     {

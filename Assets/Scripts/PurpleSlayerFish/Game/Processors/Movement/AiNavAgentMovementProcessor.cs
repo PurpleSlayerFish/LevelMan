@@ -1,15 +1,9 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using PurpleSlayerFish.Core.Services;
-using PurpleSlayerFish.Game.Controllers;
-using PurpleSlayerFish.Game.Processors.Ai;
-using PurpleSlayerFish.Game.Processors.Ai.States;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
-using Zenject;
 
-namespace PurpleSlayerFish.Game.Behaviours.Movement
+namespace PurpleSlayerFish.Game.Processors.Movement
 {
     public class AiNavAgentMovementProcessor : MovementProcessor
     { 

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PurpleSlayerFish.Core.Services.ParallaxService
+namespace PurpleSlayerFish.Core.Services.Parallax
 {
     public interface IParallaxService
     {

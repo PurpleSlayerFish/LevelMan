@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using ThirdParty.Ultimate_Joystick.Scripts;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace PurpleSlayerFish.Core.Ui.Windows.GameWindow
+namespace PurpleSlayerFish.Core.Ui.Windows.TouchScreenWindow
 {
     public class TouchScreenWindow : AbstractWindow<TouchScreenController>
     {

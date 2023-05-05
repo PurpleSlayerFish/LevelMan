@@ -1,6 +1,6 @@
 ﻿using PurpleSlayerFish.Core.Services.SceneLoader;
 using PurpleSlayerFish.Core.Ui.Container;
-using PurpleSlayerFish.Core.Ui.Windows.ShopWindow;
+using PurpleSlayerFish.Core.Ui.Windows.SettingsWindow;
 using Zenject;
 
 namespace PurpleSlayerFish.Core.Ui.Windows.MainMenuWindow

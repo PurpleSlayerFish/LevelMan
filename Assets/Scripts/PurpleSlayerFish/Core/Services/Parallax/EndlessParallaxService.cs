@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace PurpleSlayerFish.Core.Services.ParallaxService
+namespace PurpleSlayerFish.Core.Services.Parallax
 {
     public class EndlessParallaxService : MonoBehaviour, IParallaxService
     {

@@ -2,7 +2,7 @@
 using PurpleSlayerFish.Core.Services.DataStorage;
 using Zenject;
 
-namespace PurpleSlayerFish.Core.Ui.Windows.ShopWindow
+namespace PurpleSlayerFish.Core.Ui.Windows.SettingsWindow
 {
     public class SettingsController : AbstractController<SettingsWindow>
     {

@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4513615721340683718
 Transform:
@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8752cffef21b4561b4ed65bc45a79b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _offset: 0.5
   _behavior: {fileID: 4430410041010261284}
   _objectKey: ShroomBehaviour
   _tooltipFirstPivot: {fileID: 4238642010362292529}
@@ -99,7 +100,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &844538064304213281
 Transform:

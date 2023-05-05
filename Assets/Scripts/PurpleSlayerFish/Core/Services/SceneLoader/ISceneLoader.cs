@@ -1,7 +1,11 @@
-﻿namespace PurpleSlayerFish.Core.Services.SceneLoader
+﻿using System.Threading.Tasks;
+
+namespace PurpleSlayerFish.Core.Services.SceneLoader
 {
     public interface ISceneLoader
     {
-        void Load(string sceneName);
+        Task Load(string sceneName);
+        
+        void Reload();
     }
 }

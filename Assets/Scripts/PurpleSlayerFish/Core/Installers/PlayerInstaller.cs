@@ -3,15 +3,14 @@ using PurpleSlayerFish.Core.Global;
 using PurpleSlayerFish.Core.Services.AssetProvider;
 using PurpleSlayerFish.Core.Services.EffectsManager;
 using PurpleSlayerFish.Core.Services.Input;
-using PurpleSlayerFish.Core.Services.PauseService;
+using PurpleSlayerFish.Core.Services.Pause;
 using PurpleSlayerFish.Core.Services.Pools.Config;
 using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
 using PurpleSlayerFish.Core.Services.ScenePoints;
-using PurpleSlayerFish.Core.Ui.AudioManager;
 using PurpleSlayerFish.Core.Ui.Windows.GameWindow;
 using PurpleSlayerFish.Game.Behaviours;
-using PurpleSlayerFish.Game.Behaviours.Movement;
 using PurpleSlayerFish.Game.Controllers;
+using PurpleSlayerFish.Game.Controllers.Impls;
 using Zenject;
 
 namespace PurpleSlayerFish.Core.Installers
@@ -33,7 +32,12 @@ namespace PurpleSlayerFish.Core.Installers
 
         public override void InstallBindings()
         {
-            _inputProvider.Data.OnEscape += () => _pauseService.SetPause(!_pauseService.IsPaused);
+            _inputProvider.Data.OnEscape += () =>
+            {
+                // todo проверку и закрытие других окон
+                _pauseService.SetPause(!_pauseService.IsPaused);
+                _pauseService.UpdatePauseWindow();
+            };
             
             var player = _assetProvider.Instantiate<PlayerBehaviour>(GameGlobal.PREFABS_BUNDLE);
             
@@ -45,6 +49,7 @@ namespace PurpleSlayerFish.Core.Installers
             player.Initialize();
             
             _signalBus.Fire(new ScoreSubscription{Score = 100});
+            _signalBus.Fire(new HealthSubscription{HealthPercent = player.CombatProcessor.HealthPercent});
             _ratController.Initialize(player);
         }
     }

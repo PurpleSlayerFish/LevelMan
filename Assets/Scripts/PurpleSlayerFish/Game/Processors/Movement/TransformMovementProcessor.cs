@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PurpleSlayerFish.Game.Behaviours.Movement
+namespace PurpleSlayerFish.Game.Processors.Movement
 {
     public class TransformMovementProcessor : MovementProcessor
     {

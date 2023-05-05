@@ -19,12 +19,18 @@ namespace PurpleSlayerFish.Core.Ui.Windows
 
         public override async void Show()
         {
+            if (IsShown)
+                return;
+            OnBeforeShow?.Invoke();
             _window.Canvas.enabled = true;
             await DynamicShow();
         }
 
         public override async void Hide()
         {
+            if (!IsShown)
+                return;
+            OnBeforeHide?.Invoke();
             await DynamicHide();
             if (_window.Canvas == null)
                 return;
@@ -45,6 +51,9 @@ namespace PurpleSlayerFish.Core.Ui.Windows
 
     public abstract class AbstractController : IDisposable
     {
+        public Action OnBeforeShow;
+        public Action OnBeforeHide;
+        
         public abstract void Initialize(AbstractWindow window);
         public abstract void Show();
         public abstract void Hide();

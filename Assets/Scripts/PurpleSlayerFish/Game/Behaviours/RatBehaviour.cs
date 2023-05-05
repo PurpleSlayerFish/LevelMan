@@ -1,5 +1,4 @@
-﻿using PurpleSlayerFish.Core.Services.ScriptableObjects.GameConfig;
-using PurpleSlayerFish.Game.Processors.Ai;
+﻿using PurpleSlayerFish.Game.Processors.Ai;
 using Zenject;
 
 namespace PurpleSlayerFish.Game.Behaviours

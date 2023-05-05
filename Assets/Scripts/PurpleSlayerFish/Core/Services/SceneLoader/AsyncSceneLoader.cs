@@ -11,7 +11,7 @@ namespace PurpleSlayerFish.Core.Services.SceneLoader
         [Inject] private LoadingController _loadingController;
         private float _startTime;
         
-        public async void Load(string sceneName)
+        public async Task Load(string sceneName)
         {
             _loadingController.Show();
             
@@ -30,5 +30,7 @@ namespace PurpleSlayerFish.Core.Services.SceneLoader
             _loadingController.Hide();
             asyncOperation.allowSceneActivation = true;
         }
+
+        public async void Reload() => await Load(SceneManager.GetActiveScene().name);
     }
 }

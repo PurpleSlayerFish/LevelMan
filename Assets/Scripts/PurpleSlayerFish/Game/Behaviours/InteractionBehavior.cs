@@ -1,11 +1,8 @@
 ﻿using System;
 using PurpleSlayerFish.Core.Behaviours;
-using PurpleSlayerFish.Core.Services.Tooltips;
-using PurpleSlayerFish.Game.Controllers;
-using UnityEngine;
-using Zenject;
+using PurpleSlayerFish.Game.Processors.Interaction;
 
-namespace PurpleSlayerFish.Game.Processors.InteractionProcessor
+namespace PurpleSlayerFish.Game.Behaviours
 {
     public class InteractionBehavior : AbstractBehaviour
     {

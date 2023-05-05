@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9129aa3891459b99e3e99d720cb4ec, type: 3}
+  m_Name: RatSpawnConfig
+  m_EditorClassIdentifier: 
+  RatSpawnInfo:
+  - RatsPerPoint: 0
+    SpawnCooldown: 0
+    MaxRatsCount: 15
+  - RatsPerPoint: 0
+    SpawnCooldown: 0
+    MaxRatsCount: 15
+  - RatsPerPoint: 1
+    SpawnCooldown: 60
+    MaxRatsCount: 15
+  - RatsPerPoint: 1
+    SpawnCooldown: 50
+    MaxRatsCount: 15
+  - RatsPerPoint: 2
+    SpawnCooldown: 50
+    MaxRatsCount: 15
+  - RatsPerPoint: 2
+    SpawnCooldown: 40
+    MaxRatsCount: 15
+  - RatsPerPoint: 3
+    SpawnCooldown: 40
+    MaxRatsCount: 15
+  - RatsPerPoint: 3
+    SpawnCooldown: 30
+    MaxRatsCount: 15

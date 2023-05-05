@@ -1,7 +1,7 @@
 ﻿using PurpleSlayerFish.Core.Services.Input;
 using Zenject;
 
-namespace PurpleSlayerFish.Core.Ui.Windows.GameWindow
+namespace PurpleSlayerFish.Core.Ui.Windows.TouchScreenWindow
 {
     public class TouchScreenController : AbstractController<TouchScreenWindow>, ITickable
     {
