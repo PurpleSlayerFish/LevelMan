@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.5
+  m_fontSize: 27.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -381,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7570040181810002787, guid: 5b175b899ca3dc344b9e0837f3518191, type: 3}
       propertyPath: m_fontSize
-      value: 27.35
+      value: 24.85
       objectReference: {fileID: 0}
     - target: {fileID: 8877061580633780585, guid: 5b175b899ca3dc344b9e0837f3518191, type: 3}
       propertyPath: m_Pivot.x
@@ -579,6 +579,18 @@ PrefabInstance:
     - target: {fileID: 8212276813654160717, guid: fc837cebe9c398447b256b4008ef104e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189514663855084173, guid: fc837cebe9c398447b256b4008ef104e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189514663855084173, guid: fc837cebe9c398447b256b4008ef104e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189514663855084173, guid: fc837cebe9c398447b256b4008ef104e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.10980393
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc837cebe9c398447b256b4008ef104e, type: 3}

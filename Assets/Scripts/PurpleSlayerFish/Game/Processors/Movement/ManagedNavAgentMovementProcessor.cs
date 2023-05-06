@@ -19,6 +19,8 @@ namespace PurpleSlayerFish.Game.Processors.Movement
 
         public override void Move(Vector3 direction)
         {
+            if (!_agent.enabled)
+                return;
             if (direction == Vector3.up)
                 return;
             Rotate(direction);

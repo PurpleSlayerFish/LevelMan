@@ -21,6 +21,7 @@ namespace PurpleSlayerFish.Game.Processors.Interaction
         [Inject] private IAssetProvider _assetProvider;
         [Inject] private IUiContainer _uiContainer;
         
+        [SerializeField] private GameObject _animationPivot;
         [SerializeField] private Transform _tooltipFirstPivot;
         [SerializeField] private Transform _tooltipSecondPivot;
 
@@ -45,6 +46,8 @@ namespace PurpleSlayerFish.Game.Processors.Interaction
             _currentBricks++;
             _dataStorage.CurrentData.Bricks = _currentBricks;
             Build(_currentBricks);
+            
+            interactor.Player.Animate(_animationPivot.transform, _gameConfig.PlayerColumnAnimation, _gameConfig.PlayerColumnDuration);
             if (_currentBricks >= _gameConfig.TotalBrickCount)
                 _uiContainer.Show<FinishController>();
         }

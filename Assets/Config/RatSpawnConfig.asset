@@ -15,25 +15,25 @@ MonoBehaviour:
   RatSpawnInfo:
   - RatsPerPoint: 0
     SpawnCooldown: 0
-    MaxRatsCount: 15
+    MaxRatsCount: 5
   - RatsPerPoint: 0
     SpawnCooldown: 0
-    MaxRatsCount: 15
+    MaxRatsCount: 6
   - RatsPerPoint: 1
     SpawnCooldown: 60
-    MaxRatsCount: 15
+    MaxRatsCount: 7
   - RatsPerPoint: 1
     SpawnCooldown: 50
-    MaxRatsCount: 15
-  - RatsPerPoint: 2
+    MaxRatsCount: 8
+  - RatsPerPoint: 1
     SpawnCooldown: 50
-    MaxRatsCount: 15
+    MaxRatsCount: 9
   - RatsPerPoint: 2
     SpawnCooldown: 40
-    MaxRatsCount: 15
-  - RatsPerPoint: 3
+    MaxRatsCount: 10
+  - RatsPerPoint: 2
     SpawnCooldown: 40
-    MaxRatsCount: 15
-  - RatsPerPoint: 3
+    MaxRatsCount: 11
+  - RatsPerPoint: 2
     SpawnCooldown: 30
-    MaxRatsCount: 15
+    MaxRatsCount: 12

@@ -16,20 +16,27 @@ namespace PurpleSlayerFish.Core.Services.ScriptableObjects
         public float PlayerNormalSpeed => _playerNormalSpeed;
         [SerializeField] private float _playerBusySpeed = 1.7f;
         public float PlayerBusySpeed => _playerBusySpeed;
+        [SerializeField] private int _shroomsHeal = 5;
+        public int ShroomsHeal => _shroomsHeal;
         
         
-        [Header("Player Animations")]
+        [Header("Player Base Animations")]
         [SerializeField] private int _playerIdleAnimation = 0;
         public int PlayerIdleAnimation => _playerIdleAnimation;
         [SerializeField] private int _playerWalkingAnimation = 1;
         public int PlayerWalkingAnimation => _playerWalkingAnimation;
         [SerializeField] private int _playerJumpAnimation = 2;
         public int PlayerRunAnimation => _playerJumpAnimation;
-        [SerializeField] private int _playerSillyAnimation = 20;
-        public int PlayerSillyAnimation => _playerSillyAnimation;
-        [SerializeField] private int _shroomsHeal = 5;
-        public int ShroomsHeal => _shroomsHeal;
+        [SerializeField] private int _playerStirAnimation = 20;
+        public int PlayerStirAnimation => _playerStirAnimation;
+        [SerializeField] private float _playerStirAnimationDuration = 3f;
+        public float PlayerStirAnimationDuration => _playerStirAnimationDuration;
+        [SerializeField] private int _playerColumnAnimation = 21;
+        public int PlayerColumnAnimation => _playerColumnAnimation;
+        [SerializeField] private float _playerColumnDuration = 3f;
+        public float PlayerColumnDuration => _playerColumnDuration;
         
+        [Header("Player Action Animations")]
         [SerializeField] private int _playerAttackAnimation = 10;
         public int PlayerAttackAnimation => _playerAttackAnimation;
         [SerializeField] private int _playerTakeAnimation = 20;
@@ -60,11 +67,7 @@ namespace PurpleSlayerFish.Core.Services.ScriptableObjects
         public float RatOffset => _ratOffset;
         [SerializeField] private float _ratSpawnToPlayerOffset = 15f;
         public float RatSpawnToPlayerOffset => _ratSpawnToPlayerOffset;
-        
-        [Header("Interactions Options")]
-        [SerializeField] private float _stirDuration = 1f;
-        public float StirDuration => _stirDuration;
-        
+
         [Header("Column Options")]
         [SerializeField] private int _startBrickCount = 1;
         public int StartBrickCount => _startBrickCount;

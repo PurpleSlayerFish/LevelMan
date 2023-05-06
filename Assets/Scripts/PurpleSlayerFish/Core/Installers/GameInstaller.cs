@@ -36,15 +36,13 @@ namespace PurpleSlayerFish.Core.Installers
 
         public override void InstallBindings()
         {
+            _dataStorage.LoadCurrent();
             BindSignals();
             BindInterfaces();
             BindInstances();
             BindPools();
             BindUi();
             BindInput();
-            
-            _dataStorage.LoadCurrent();
-
         }
 
         private void BindSignals()

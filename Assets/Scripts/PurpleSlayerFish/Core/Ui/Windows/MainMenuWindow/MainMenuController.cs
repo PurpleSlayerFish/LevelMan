@@ -1,4 +1,6 @@
-﻿using PurpleSlayerFish.Core.Services.SceneLoader;
+﻿using PurpleSlayerFish.Core.Data;
+using PurpleSlayerFish.Core.Services.DataStorage;
+using PurpleSlayerFish.Core.Services.SceneLoader;
 using PurpleSlayerFish.Core.Ui.Container;
 using PurpleSlayerFish.Core.Ui.Windows.SettingsWindow;
 using Zenject;
@@ -9,12 +11,22 @@ namespace PurpleSlayerFish.Core.Ui.Windows.MainMenuWindow
     {
         [Inject] private IUiContainer _uiContainer;
         [Inject] private ISceneLoader _sceneLoader;
+        [Inject] private IDataStorage<PlayerData> _dataStorage;
         
         protected override void AfterInitialize()
         {
-            _window.PlayBtn.AddOnClick(LoadGame);
-            _window.ShopBtn.AddOnClick(() => _uiContainer.Show<SettingsController>());
+            _window.NewGameBtn.AddOnClick(NewGame);
+            _window.LoadGameBtn.AddOnClick(LoadGame);
+            _window.SettingBtn.AddOnClick(() => _uiContainer.Show<SettingsController>());
             _window.QuitBtn.AddOnClick(BuildQuitDialog);
+
+            _window.LoadGameBtn.Button.interactable = !_dataStorage.CurrentData.IsNew;
+        }
+
+        private void NewGame()
+        {
+            _dataStorage.Clear();
+            _sceneLoader.Load(_window.GameSceneName);
         }
 
         private void LoadGame() => _sceneLoader.Load(_window.GameSceneName);

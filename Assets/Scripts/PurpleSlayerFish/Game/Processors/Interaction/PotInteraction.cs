@@ -1,4 +1,5 @@
-﻿using PurpleSlayerFish.Core.Services.ScriptableObjects;
+﻿using PurpleSlayerFish.Core.Services.Input;
+using PurpleSlayerFish.Core.Services.ScriptableObjects;
 using PurpleSlayerFish.Core.Ui.Windows.GameWindow;
 using PurpleSlayerFish.Game.Controllers.Impls;
 using PurpleSlayerFish.Game.Processors.Interaction.Interactors;
@@ -12,6 +13,7 @@ namespace PurpleSlayerFish.Game.Processors.Interaction
         [Inject] private InteractionController _interactionController;
         [Inject] private GameConfig _gameConfig;
         [Inject] private SignalBus _signalBus;
+        [Inject] private IInputProvider<InputData> _inputProvider;
         [SerializeField] private string _objectKey;
         [SerializeField] private Transform _tooltipFirstPivot;
         [SerializeField] private Transform _tooltipSecondPivot;
@@ -34,6 +36,9 @@ namespace PurpleSlayerFish.Game.Processors.Interaction
 
         public override bool AllowInteraction(PlayerInteractor interactor)
         {
+            if (_inputProvider.Data.BlockInput)
+                return false;
+            
             if (!interactor.IsBusy && (!_hasSand && !_hasStalagnate || _hasSand && _hasStalagnate))
                 return true;
 
@@ -103,6 +108,7 @@ namespace PurpleSlayerFish.Game.Processors.Interaction
         {
             WhatDo(PlayerInteractor.SHROOM_KEY, false);
             WhatDo(PlayerInteractor.SOOP_KEY, true);
+            interactor.Player.Animate(_stirPivot.transform, _gameConfig.PlayerStirAnimation, _gameConfig.PlayerStirAnimationDuration);
         }
         
         private void HandleSoop(PlayerInteractor interactor)

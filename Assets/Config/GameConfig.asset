@@ -17,11 +17,14 @@ MonoBehaviour:
   _playerInterationOffset: 0.6
   _playerNormalSpeed: 3.4
   _playerBusySpeed: 1.7
+  _shroomsHeal: 5
   _playerIdleAnimation: 0
   _playerWalkingAnimation: 1
   _playerJumpAnimation: 2
-  _playerSillyAnimation: 20
-  _shroomsHeal: 5
+  _playerStirAnimation: 20
+  _playerStirAnimationDuration: 3
+  _playerColumnAnimation: 21
+  _playerColumnDuration: 4
   _playerAttackAnimation: 10
   _playerTakeAnimation: 20
   _playerHitAnimation: 30
@@ -33,8 +36,7 @@ MonoBehaviour:
   _ratDespawnTime: 3
   _ratDespawnDuration: 0.7
   _ratOffset: 0.28
-  _ratSpawnToPlayerOffset: 15
-  _stirDuration: 1
+  _ratSpawnToPlayerOffset: 10
   _startBrickCount: 1
   _totalBrickCount: 7
   _brickHeight: 1

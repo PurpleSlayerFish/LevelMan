@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using DG.Tweening;
 using PurpleSlayerFish.Core.Behaviours;
 using PurpleSlayerFish.Core.Services;
 using PurpleSlayerFish.Core.Services.Input;
@@ -44,9 +45,21 @@ namespace PurpleSlayerFish.Game.Behaviours
             LightProcessor.Initialize();
         }
 
-        public void AnimateStir()
+        public void Animate(Transform pivot, int animation, float duration)
         {
-            
+            _inputProvider.Data.BlockInput = true;
+            MovementProcessor.Agent.enabled = false;
+            transform.position = pivot.position;
+            transform.rotation = pivot.rotation;
+            AnimationProcessor.WalkingState(animation);
+            DOVirtual.DelayedCall(duration,StopAnimate);
+
+            void StopAnimate()
+            {
+                _inputProvider.Data.BlockInput = false;
+                MovementProcessor.Agent.enabled = true;
+                AnimationProcessor.WalkingState(_gameConfig.PlayerIdleAnimation);
+            }
         }
 
         private void Update()
@@ -58,6 +71,9 @@ namespace PurpleSlayerFish.Game.Behaviours
 
         private void SetWalkAnimation()
         {
+            if (!MovementProcessor.Agent.enabled)
+                return;
+            
             AnimationProcessor.WalkingState(_direction.x == 0 && _direction.z == 0 
                 ? _gameConfig.PlayerIdleAnimation 
                 : Interactor.IsBusy ? _gameConfig.PlayerWalkingAnimation : _gameConfig.PlayerRunAnimation);

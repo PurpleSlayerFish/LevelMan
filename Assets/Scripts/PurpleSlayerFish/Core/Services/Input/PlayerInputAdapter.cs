@@ -52,35 +52,37 @@ namespace PurpleSlayerFish.Core.Services.Input
                 _subscribers.Remove(_subscribers[i]);
             }
         }
+
+        private bool _condition => _pauseService.IsPaused || _inputProvider.Data.BlockInput; 
         
         // todo придумать что-то на экшенах и предикантах
         private void OnHorizontal(InputAction.CallbackContext ctx)
         {
-            if (_pauseService.IsPaused)
+            if (_condition)
                 return;
             _inputProvider.Data.HorizontalAxis = ctx.ReadValue<float>();
         }
         private void OnVertical(InputAction.CallbackContext ctx)
         {
-            if (_pauseService.IsPaused)
+            if (_condition)
                 return;
             _inputProvider.Data.VerticalAxis = ctx.ReadValue<float>();
         }
         private void OnActionMain(InputAction.CallbackContext ctx)
         {
-            if (_pauseService.IsPaused)
+            if (_condition)
                 return;
             _inputProvider.Data.OnActionMain?.Invoke();
         }
         private void OnActionSecond(InputAction.CallbackContext ctx)
         {
-            if (_pauseService.IsPaused)
+            if (_condition)
                 return;
             _inputProvider.Data.OnActionSecond?.Invoke();
         }
         private void OnAttack(InputAction.CallbackContext ctx)
         {
-            if (_pauseService.IsPaused)
+            if (_condition)
                 return;
             _inputProvider.Data.OnAttack?.Invoke();
         }
