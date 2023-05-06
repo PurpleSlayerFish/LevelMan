@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using PurpleSlayerFish.Core.Data;
+using PurpleSlayerFish.Core.Services.DataStorage;
 using PurpleSlayerFish.Core.Services.Pools.Config;
 using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
+using PurpleSlayerFish.Core.Services.ScenePoints;
 using PurpleSlayerFish.Core.Services.ScriptableObjects;
 using PurpleSlayerFish.Game.Behaviours;
 using UnityEngine;
@@ -15,8 +18,10 @@ namespace PurpleSlayerFish.Game.Controllers.Impls
     public class ObstacleController : IntersectionController<ObstacleBehaviour>
     {
         [Inject] private GameConfig _gameConfig;
-        [Inject] private IPoolProvider<BehaviourPoolData> _poolProvider;
+        [Inject] private ScenePoints _scenePoints;
         [Inject] private InteractionController _interactionController;
+        [Inject] private IPoolProvider<BehaviourPoolData> _poolProvider;
+        [Inject] private IDataStorage<PlayerData> _dataStorage;
 
         private float _navMeshOffset = NavMesh.GetSettingsByID(0).voxelSize;
         
@@ -29,6 +34,15 @@ namespace PurpleSlayerFish.Game.Controllers.Impls
                     _intersectors[i].Pivot1.position))
                     return _intersectors[i];
             return null;
+        }
+        
+        public void Initialize()
+        {
+            if (_dataStorage.CurrentData.Bricks < 2)
+            {
+                SpawnObstacle(_scenePoints.Points.Get("OBSTACLE_TUTORIAL_1").position);
+                SpawnObstacle(_scenePoints.Points.Get("OBSTACLE_TUTORIAL_2").position);
+            }
         }
         
         public void SpawnObstacle(Vector3 dropPosition)
@@ -48,13 +62,13 @@ namespace PurpleSlayerFish.Game.Controllers.Impls
             if (instantly)
             {
                 _interactionController.Interactions.Remove(obstacle.ObstacleInteraction);
-                _intersectors.Remove(obstacle);Clear(obstacle);
+                _intersectors.Remove(obstacle);
                 RemoveFromPool(obstacle);
             }
             else
             {
                 _interactionController.Interactions.Remove(obstacle.ObstacleInteraction);
-                _intersectors.Remove(obstacle);Clear(obstacle);
+                _intersectors.Remove(obstacle);
                 Animate(obstacle, () => RemoveFromPool(obstacle));
             }
         }
@@ -68,10 +82,7 @@ namespace PurpleSlayerFish.Game.Controllers.Impls
 
         private void RemoveFromPool(ObstacleBehaviour obstacle)
         {
-            if (obstacle.ObstacleInteraction.IsDrop)
-                _poolProvider.Release(obstacle);
-            else
-                Object.Destroy(obstacle.gameObject);
+            _poolProvider.Release(obstacle);
         }
         
         private void Clear(ObstacleBehaviour obstacle)

@@ -12,16 +12,16 @@ namespace PurpleSlayerFish.Core.Installers
     {
         [Inject] private IAssetProvider _assetProvider;
 
-        private RatController _ratController;
         private StalagnateController _stalagnateController;
+        private ObstacleController _obstacleController;
         public override void InstallBindings()
         {
             Container.BindInstance(_assetProvider.GetScriptableObject<RatSpawnConfig>()).AsSingle();
             Container.BindInstance(Container.Instantiate<InteractionController>()).AsSingle();
-            // _ratController = Container.Instantiate<RatController>();
             Container.BindInterfacesAndSelfTo<RatController>().AsSingle();
-            // Container.BindInstance(_ratController).AsSingle();
-            Container.BindInstance(Container.Instantiate<ObstacleController>()).AsSingle();
+            _obstacleController = Container.Instantiate<ObstacleController>();
+            Container.BindInstance(_obstacleController).AsSingle();
+            _obstacleController.Initialize();
             _stalagnateController = Container.Instantiate<StalagnateController>();
             Container.BindInstance(_stalagnateController).AsSingle();
         }

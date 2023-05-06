@@ -20,7 +20,6 @@ namespace PurpleSlayerFish.Core.Ui.ElementManager.Elements
         {
             _tweener?.Kill();
             _tweener = Image.DOFillAmount(fillAmount, _duration).SetEase(_ease);
-            Debug.Log(fillAmount);
         }
     }
 }
