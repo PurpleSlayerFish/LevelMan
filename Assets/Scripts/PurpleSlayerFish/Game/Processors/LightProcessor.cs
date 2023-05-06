@@ -34,6 +34,7 @@ namespace PurpleSlayerFish.Game.Processors
         public void MaximizeLight(float hsvH)
         {
             Color.RGBToHSV(_mainPlayerLight.color, out float hsvH2, out float hsvS, out float hsvV);
+            _duration = _gameConfig.LightBugDuration;
             _currentLightLevel = _gameConfig.PlayerMaxLightLevel;
             var newColor = Color.HSVToRGB(hsvH, hsvS, hsvV);
             _mainPlayerLight.color = newColor;

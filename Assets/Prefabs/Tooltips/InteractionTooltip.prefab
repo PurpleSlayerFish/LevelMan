@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4584453355068942784, guid: 7b68ac6cca448ed45b90c55fc89a3494, type: 3}
+      propertyPath: m_fontSize
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584453355068942784, guid: 7b68ac6cca448ed45b90c55fc89a3494, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4897119344584213879, guid: 7b68ac6cca448ed45b90c55fc89a3494, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6937189920339286575, guid: 7b68ac6cca448ed45b90c55fc89a3494, type: 3}
       propertyPath: m_Name
-      value: _DefaultTooltip
+      value: InteractionTooltip
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b68ac6cca448ed45b90c55fc89a3494, type: 3}

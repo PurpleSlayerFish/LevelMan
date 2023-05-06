@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 455086973
+CRC: 81314901
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 32a0e30c84f2baa7de77c3c8f6088f3b
+    Hash: e897e5dcc4308e746bfbfc95ed054cd6
   TypeTreeHash:
     serializedVersion: 2
     Hash: 62300e8b221528e3259e2c82802c0d34
@@ -23,6 +23,27 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Prefabs/Audio/TransitionAudio.prefab
-- Assets/Prefabs/Audio/CloseAudio.prefab
+- Assets/Prefabs/Audio/Cave 6.prefab
+- Assets/Prefabs/Audio/Speech 4.prefab
+- Assets/Prefabs/Audio/Cave 1.prefab
+- Assets/Prefabs/Audio/Speech 9.prefab
+- Assets/Prefabs/Audio/MusicPrefab.prefab
+- Assets/Prefabs/Audio/Speech 6.prefab
+- Assets/Prefabs/Audio/Cave 3.prefab
+- Assets/Prefabs/Audio/Cave 5.prefab
+- Assets/Prefabs/Audio/Speech 11.prefab
+- Assets/Prefabs/Audio/Cave 2.prefab
+- Assets/Prefabs/Audio/Cave 8.prefab
+- Assets/Prefabs/Audio/Speech 3.prefab
+- Assets/Prefabs/Audio/Speech 1.prefab
+- Assets/Prefabs/Audio/Speech 5.prefab
+- Assets/Prefabs/Audio/Speech 2.prefab
+- Assets/Prefabs/Audio/Speech 7.prefab
+- Assets/Prefabs/Audio/Cave 9.prefab
+- Assets/Prefabs/Audio/Cave 7.prefab
+- Assets/Prefabs/Audio/Speech 12.prefab
+- Assets/Prefabs/Audio/Speech 8.prefab
+- Assets/Prefabs/Audio/Cave 4.prefab
+- Assets/Prefabs/Audio/Speech 10.prefab
+- Assets/Prefabs/Audio/FirstSpeech.prefab
 Dependencies: []

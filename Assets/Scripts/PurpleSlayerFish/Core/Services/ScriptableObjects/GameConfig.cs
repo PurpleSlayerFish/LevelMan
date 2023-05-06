@@ -86,5 +86,12 @@ namespace PurpleSlayerFish.Core.Services.ScriptableObjects
         public float PlayerMaxLightLevel => _playerMaxLightLevel;
         [SerializeField] private float _lightBugDuration = 120f;
         public float LightBugDuration => _lightBugDuration;
+        
+        
+        [Header("Sound Options")]
+        [SerializeField] private float _randomPhrasesTimeout = 66f;
+        public float RandomPhrasesTimeout => _randomPhrasesTimeout;
+        [SerializeField] private float _randomCaveSoundTimeout = 46f;
+        public float RandomCaveSoundTimeout => _randomCaveSoundTimeout;
     }
 }

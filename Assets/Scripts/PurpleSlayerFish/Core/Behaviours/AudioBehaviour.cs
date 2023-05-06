@@ -10,7 +10,7 @@ namespace PurpleSlayerFish.Core.Behaviours
         [Inject] private MathUtils _mathUtils;
         public Temporator Temporator { get; set; }
 
-        public int ClipDuation => Mathf.FloorToInt(_audioSource.clip.length * 1000);
+        public int ClipDuration => Mathf.FloorToInt(_audioSource.clip.length * 1000);
         
         public override void Initialize()
         {

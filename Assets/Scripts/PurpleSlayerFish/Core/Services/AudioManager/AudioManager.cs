@@ -2,6 +2,7 @@
 using PurpleSlayerFish.Core.Services.DataStorage;
 using PurpleSlayerFish.Core.Services.Pools.Config;
 using PurpleSlayerFish.Core.Services.Pools.PoolProvider;
+using UnityEngine;
 using Zenject;
 
 namespace PurpleSlayerFish.Core.Services.AudioManager
@@ -13,18 +14,19 @@ namespace PurpleSlayerFish.Core.Services.AudioManager
         
         private bool _isSoundEnabled => _settingsStorage.Load().IsSoundEnabled;
 
-        public void PlayCloseSound()
+        public void PlayRandom(string[] keys)
         {
             if (!_isSoundEnabled)
                 return;
-            _audioPoolProvider.Get("CloseAudio");
+            
+            _audioPoolProvider.Get(keys[Random.Range(0, keys.Length)]);
         }
         
-        public void PlayTransitionAudio()
+        public void Play(string key)
         {
             if (!_isSoundEnabled)
                 return;
-            _audioPoolProvider.Get("TransitionAudio");
+            _audioPoolProvider.Get(key);
         }
     }
 }

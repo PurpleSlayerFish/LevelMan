@@ -44,3 +44,5 @@ MonoBehaviour:
   _playerMinLightLevel: 0.6
   _playerMaxLightLevel: 2.2
   _lightBugDuration: 120
+  _randomPhrasesTimeout: 66
+  _randomCaveSoundTimeout: 46

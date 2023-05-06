@@ -244,7 +244,7 @@ MonoBehaviour:
   _fadeDuration: 0.7
   _loadingWheel: {fileID: 1321992848288399862}
   _rotationSpeed: -115
-  _simulatedLoadingTime: 15
+  _simulatedLoadingTime: 1
 --- !u!1 &9160346038960775107
 GameObject:
   m_ObjectHideFlags: 0

@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2150686a43c54406a34e192b42c95443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delayMilliseconds: 1500
+  _delayMilliseconds: 2000
   _nextSceneName: MainMenuScene
 --- !u!114 &1336987298
 MonoBehaviour:

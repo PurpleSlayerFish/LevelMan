@@ -41,7 +41,12 @@ namespace PurpleSlayerFish.Game.Behaviours
             CombatProcessor.Initialize();
             CombatProcessor.AnimationProcessor = AnimationProcessor;
             Interactor.Initialize();
-            _inputProvider.Data.OnAttack += () => CombatProcessor.Attack();
+            _inputProvider.Data.OnAttack += () =>
+            {
+                // transform.rotation
+                CombatProcessor.Attack();
+                // CombatProcessor.OnAfterAttack;
+            };
             LightProcessor.Initialize();
         }
 

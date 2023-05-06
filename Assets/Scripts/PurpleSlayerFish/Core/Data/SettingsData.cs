@@ -6,6 +6,6 @@ namespace PurpleSlayerFish.Core.Data
     public class SettingsData : IStorableData
     {
         public bool IsNew { get; set; } = true;
-        public bool IsSoundEnabled;
+        public bool IsSoundEnabled = true;
     }
 }

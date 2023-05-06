@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: StalagnateHealth
   m_EditorClassIdentifier: 
   _healthData:
-    MaxHealth: 3
-    CurrentHealth: 3
+    MaxHealth: 5
+    CurrentHealth: 5

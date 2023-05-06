@@ -142,6 +142,7 @@ namespace PurpleSlayerFish.Game.Processors.Interaction
             WhatDo(PlayerInteractor.SAND_KEY, false);
             WhatDo(PlayerInteractor.STALAGNATE_KEY, false);
             WhatDo(PlayerInteractor.BRICK_KEY, true);
+            interactor.Player.Animate(_stirPivot.transform, _gameConfig.PlayerStirAnimation, _gameConfig.PlayerStirAnimationDuration);
         }
         
         private void HandleBrick(PlayerInteractor interactor)

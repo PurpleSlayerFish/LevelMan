@@ -13,11 +13,95 @@ MonoBehaviour:
   m_Name: AudioPoolConfig
   m_EditorClassIdentifier: 
   _poolData:
-  - _prefabName: CloseAudio
+  - _prefabName: MusicPrefab
     _bundleName: audio_prefabs
     _defaultCapacity: 1
-    _maxPoolSize: 3
-  - _prefabName: TransitionAudio
+    _maxPoolSize: 1
+  - _prefabName: FirstSpeech
     _bundleName: audio_prefabs
     _defaultCapacity: 1
-    _maxPoolSize: 3
+    _maxPoolSize: 1
+  - _prefabName: Speech 1
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 2
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 3
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 4
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 5
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 6
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 7
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 8
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 9
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 10
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 11
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Speech 12
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 1
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 2
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 3
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 4
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 5
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 6
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 7
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 8
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1
+  - _prefabName: Cave 9
+    _bundleName: audio_prefabs
+    _defaultCapacity: 1
+    _maxPoolSize: 1

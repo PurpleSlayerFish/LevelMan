@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: RatHealth
   m_EditorClassIdentifier: 
   _healthData:
-    MaxHealth: 2
-    CurrentHealth: 2
+    MaxHealth: 1
+    CurrentHealth: 1

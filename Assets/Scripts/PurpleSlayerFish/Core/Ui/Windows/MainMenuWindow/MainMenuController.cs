@@ -1,8 +1,10 @@
-﻿using PurpleSlayerFish.Core.Data;
+﻿using System.Threading.Tasks;
+using PurpleSlayerFish.Core.Data;
 using PurpleSlayerFish.Core.Services.DataStorage;
 using PurpleSlayerFish.Core.Services.SceneLoader;
 using PurpleSlayerFish.Core.Ui.Container;
 using PurpleSlayerFish.Core.Ui.Windows.SettingsWindow;
+using UnityEngine;
 using Zenject;
 
 namespace PurpleSlayerFish.Core.Ui.Windows.MainMenuWindow
@@ -15,11 +17,13 @@ namespace PurpleSlayerFish.Core.Ui.Windows.MainMenuWindow
         
         protected override void AfterInitialize()
         {
+            _tempPosition2 = _window.Credits.transform.position;
             _window.NewGameBtn.AddOnClick(NewGame);
             _window.LoadGameBtn.AddOnClick(LoadGame);
-            _window.SettingBtn.AddOnClick(() => _uiContainer.Show<SettingsController>());
+            _window.AuthorsBtn.AddOnClick(InitAuthors);
+            _window.AuthorsBackBtn.AddOnClick(() => _window.Credits.SetActive(false));
+            // _window.SettingBtn.AddOnClick(() => _uiContainer.Show<SettingsController>());
             _window.QuitBtn.AddOnClick(BuildQuitDialog);
-
             _window.LoadGameBtn.Button.interactable = !_dataStorage.CurrentData.IsNew;
         }
 
@@ -50,6 +54,21 @@ namespace PurpleSlayerFish.Core.Ui.Windows.MainMenuWindow
 #else
                 UnityEngine.Application.Quit();
 #endif
+            }
+        }
+
+        private Vector3 _tempPosition;
+        private Vector3 _tempPosition2;
+        private async void InitAuthors()
+        {
+            _window.CreditsText.transform.position = _tempPosition2;
+            _window.Credits.SetActive(true);
+            while (_window.Credits.activeSelf)
+            {
+                _tempPosition = _window.CreditsText.transform.position;
+                _tempPosition.y += _window.ScrollSpeed * Time.deltaTime;
+                _window.CreditsText.transform.position = _tempPosition;
+                await Task.Yield();
             }
         }
     }
