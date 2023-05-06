@@ -16,6 +16,7 @@ namespace PurpleSlayerFish.Game.Processors.Interaction
         
         public override Transform TooltipFirstPivot => _tooltipFirstPivot;
         public override Transform TooltipSecondPivot => _tooltipSecondPivot;
+        public override bool AllowInteraction(PlayerInteractor interactor) => true;
 
         private void Awake()
         {

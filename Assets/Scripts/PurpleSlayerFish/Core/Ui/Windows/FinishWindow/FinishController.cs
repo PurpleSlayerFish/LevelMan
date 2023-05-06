@@ -15,7 +15,7 @@ namespace PurpleSlayerFish.Core.Ui.Windows.PauseWindow
 
         protected override void AfterInitialize()
         {
-            OnBeforeShow += () => _pauseService.SetPause(true);
+            OnBeforeShow += EnableFinish;
             _window.MainMenuButton.AddOnClick(Quit);
         }
 
@@ -25,6 +25,12 @@ namespace PurpleSlayerFish.Core.Ui.Windows.PauseWindow
             _sceneLoader.Load(_window.MainMenuScene);
             
             SetInteractable(false);
+        }
+        
+        private void EnableFinish()
+        {
+            _pauseService.SetPause(true);
+            _window.Finish1Complete.AddOnClick(() => _window.Finish2.SetActive(true));
         }
     }
 }

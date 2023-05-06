@@ -1,12 +1,9 @@
 ﻿using System.Threading.Tasks;
 using DG.Tweening;
-using PurpleSlayerFish.Core.Data;
 using PurpleSlayerFish.Core.Services.AssetProvider;
 using PurpleSlayerFish.Core.Services.AudioManager;
-using PurpleSlayerFish.Core.Services.DataStorage;
 using PurpleSlayerFish.Core.Services.Pause;
 using PurpleSlayerFish.Core.Services.ScriptableObjects;
-using PurpleSlayerFish.Game.Controllers;
 using PurpleSlayerFish.Game.Controllers.Impls;
 using PurpleSlayerFish.Game.ScriptableObjects;
 using UnityEngine;
@@ -34,8 +31,8 @@ namespace PurpleSlayerFish.Core.Installers
             _stalagnateController = Container.Instantiate<StalagnateController>();
             Container.BindInstance(_stalagnateController).AsSingle();
             
+            AfterStartPause();
             _audioManager.Play("MusicPrefab");
-            DOVirtual.DelayedCall(1f, () => _audioManager.Play("FirstSpeech"));
             PlayerRandomSpeech(new[]
             {
                 "Speech 1", 
@@ -101,6 +98,13 @@ namespace PurpleSlayerFish.Core.Installers
                 }
                 await Task.Yield();
             }
+        }
+
+        private async void AfterStartPause()
+        {
+            while (_pauseService.IsPaused)
+                await Task.Yield();
+            _audioManager.Play("FirstSpeech");
         }
     }
 }

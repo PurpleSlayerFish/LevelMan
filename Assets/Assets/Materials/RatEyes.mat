@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bug 4
+  m_Name: RatEyes
   m_Shader: {fileID: 4800000, guid: f8d49205b3b0a644195633020367689d, type: 3}
   m_ValidKeywords:
   - TCP2_SPEC_TOON
@@ -43,11 +43,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: d240b91d6b58df447a8a86e0649d4e1b, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 55e1fae3b1062bc4cb01c8b9d6844f41, type: 3}
+        m_Texture: {fileID: 2800000, guid: 712619b5b48174f0bac357c5bd577dfb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -107,9 +107,9 @@ Material:
     - _ZSmooth: -0.5
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.27450982, g: 0.21568628, b: 0.078431375, a: 1}
-    - _EmissionColor: {r: 3.058824, g: 2.2211037, b: 0.33631045, a: 1}
-    - _HColor: {r: 0.9137255, g: 0.63960785, b: 0, a: 1}
+    - _Color: {r: 0.754717, g: 0, b: 0.16603757, a: 1}
+    - _EmissionColor: {r: 0.74315536, g: 0, b: 0.03327561, a: 1}
+    - _HColor: {r: 0.9137255, g: 0, b: 0.19797389, a: 1}
     - _OutlineColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.6}
     - _SColor: {r: 0.574, g: 0.574, b: 0.574, a: 1}

@@ -41,6 +41,7 @@ namespace PurpleSlayerFish.Game.Processors.Ai
 
         public override void Initialize()
         {
+            MovementProcessor.Agent.enabled = true;
             _combatProcessor.Target = _playerTarget;
             _combatProcessor.AnimationProcessor = AnimationProcessor;
             _combatProcessor.IntersectionOffset = IntersectionOffset;

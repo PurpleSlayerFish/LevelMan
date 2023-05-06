@@ -13,14 +13,16 @@ namespace PurpleSlayerFish.Core.Services.Pools.PoolProvider
         protected override AbstractBehaviour CreatePooledItem(Transform parent, AudioPoolData data)
         {
             var tempBehavior = _assetProvider.Instantiate<AudioBehaviour>(data.BundleName, data.PrefabName, parent);
-            tempBehavior.Temporator = new Temporator(tempBehavior.ClipDuration, () => Release(data.PrefabName, tempBehavior));
+            var duration = tempBehavior.ClipDuration;
+            if (duration > -1)
+                tempBehavior.Temporator = new Temporator(duration, () => Release(data.PrefabName, tempBehavior));
             return tempBehavior;
         }
         
         protected override void OnTakeFromPool(AbstractBehaviour view)
         {
             base.OnTakeFromPool(view);
-            (view as AudioBehaviour)?.Temporator.Execute();
+            (view as AudioBehaviour)?.Temporator?.Execute();
         }
     }
 }

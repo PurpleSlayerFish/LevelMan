@@ -30,7 +30,7 @@ namespace PurpleSlayerFish.Core.Ui.Windows.LoadingWindow
                 if (_window.CanvasGroup == null)
                     return;
                 _window.CanvasGroup.alpha = Mathf.Abs(from - _currentTime / _window.FadeDuration);
-                _currentTime += Time.deltaTime;
+                _currentTime += Time.unscaledDeltaTime;
                 await Task.Yield();
             }
             _window.CanvasGroup.alpha = to;

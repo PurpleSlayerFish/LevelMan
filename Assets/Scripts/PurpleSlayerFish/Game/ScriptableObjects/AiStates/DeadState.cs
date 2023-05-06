@@ -9,6 +9,7 @@ namespace PurpleSlayerFish.Game.Processors.Ai.States
         {
             behaviour.BlockAi = true;
             behaviour.CombatProcessor.StopAttack = true;
+            behaviour.MovementProcessor.Agent.enabled = false;
         }
     }
 }

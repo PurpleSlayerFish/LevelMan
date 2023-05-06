@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: 
   _playerAttackOffset: 0.5
-  _playerHitDuration: 0.4
+  _playerHitDuration: 0.776
   _playerInterationOffset: 0.6
   _playerNormalSpeed: 3.4
   _playerBusySpeed: 1.7
